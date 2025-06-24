@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  /* === White Theme === */
+  --color-background: #f9fafb; /* soft off-white*/
+  --color-sidebar: #ffffff; /* pure white*/
+  --color-primary: #2563eb; /* blue-600 (for buttons/accents)*/
+  --color-hover: #1d4ed8; /* blue-700*/
+  --color-accent: #10b981; /* emerald-500 (for success, savings)*/
+  --color-warning: #f59e0b; /* amber-500*/
+  --color-danger: #ef4444; /* red-500*/
+  --color-text-Primary: #111827; /* slate-900*/
+  --color-text-Muted: #6b7280; /* gray-500*/
+  --color-border: #e5e7eb; /* gray-200*/
+  --color-card-Background: #ffffff; /* white*/
+  --color-chart-Colors: #2563eb; /*(violet-500)*/
+  /* === Dark Theme === */
+  --color-black-background: #0f172a; /* black - slate-900 */
+  --color-black-sidebar: #1e293b; /* black - slate-800 */
+  --color-black-primary: #3b82f6; /* black - blue-500 (buttons/accents) */
+  --color-black-hover: #60a5fa; /* black - blue-400 */
+  --color-black-accent: #34d399; /* black - emerald-400 */
+  --color-black-warning: #fbbf24; /* black - amber-400 */
+  --color-black-danger: #f87171; /* black - red-400 */
+  --color-black-text-Primary: #f8fafc; /* black - slate-100 */
+  --color-black-text-Muted: #94a3b8; /* black - slate-400 */
+  --color-black-border: #334155; /* black - slate-700 */
+  --color-black-card-Background: #1e293b; /* black - slate-800 */
+  --color-black-chart-Colors: #3b82f6; /* black - blue/violet-400+ */
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
