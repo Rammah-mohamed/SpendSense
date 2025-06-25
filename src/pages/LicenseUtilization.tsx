@@ -24,8 +24,6 @@ const LicenseUtilization = () => {
     return groupLicensesByTool(licenseUtilization);
   }, [licenseUtilization]);
 
-  console.log(groupedLicenses);
-
   if (loading) return <div>{loading}</div>;
   if (error) return <div>{error.message}</div>;
 

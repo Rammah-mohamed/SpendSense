@@ -11,5 +11,18 @@ export type Tool = {
 export type LicenseUtilization = {
   id: string;
   is_active: boolean;
-  tool: { id: string; name: string };
+  tool?: { id: string; name: string };
+  assigned_at: string;
+  users: {
+    full_name: string;
+    email: string;
+  }[];
+};
+
+export type SortedLicenseUtilization = {
+  toolId: string;
+  toolName: string;
+  totalLicenses: number;
+  activeLicenses: number;
+  utilization: number;
 };
