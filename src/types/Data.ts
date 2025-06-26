@@ -16,7 +16,7 @@ export type LicenseUtilization = {
   users: {
     full_name: string;
     email: string;
-  }[];
+  };
 };
 
 export type SortedLicenseUtilization = {

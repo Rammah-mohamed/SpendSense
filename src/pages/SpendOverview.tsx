@@ -2,28 +2,39 @@ import ChartWrapper from "@/components/ChartWrapper";
 import { SpendByCategoryChart } from "@/components/SpendOverview/SpendByCategoryChart";
 import SpendTable from "@/components/SpendOverview/SpendTable";
 import { formatCurrency } from "@/functions/formatCurrency";
-import { useSupabaseData } from "@/hooks/useSupabaseData";
+import { getTools } from "@/lib/queries";
 import type { Tool } from "@/types/Data";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ResponsiveContainer } from "recharts";
 
 const SpendOverview = () => {
   const [mode, setMode] = useState<"Monthly" | "Yearly">("Monthly");
+  const [toolsData, setToolsData] = useState<Tool[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
 
   // Fetch tools form supabase
-  const {
-    data: tools,
-    loading,
-    error,
-  } = useSupabaseData<Tool>(
-    "tools",
-    "id, name, category, monthly_cost, renewal_date, departments (name)",
-  );
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getTools();
+        setToolsData(data);
+      } catch (err) {
+        console.error("Failed to load license utilization data", err);
+        setError(err as Error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   // 1- Convert deparments preperty's value which is object to string value
   // 2- Add yearly cost
   const updatedTools = useMemo(() => {
-    return tools.map((t) => {
+    return toolsData.map((t) => {
       const updated = { ...t };
 
       if (t.departments && typeof t.departments === "object" && "name" in t.departments) {
@@ -37,12 +48,12 @@ const SpendOverview = () => {
 
       return updated;
     });
-  }, [tools]);
+  }, [toolsData]);
 
   // Grouped the matched tools and calculate the total cost of the tool
   const grouped = useMemo(
     () =>
-      tools.reduce<Record<string, number>>((acc, tool) => {
+      toolsData.reduce<Record<string, number>>((acc, tool) => {
         const cost = mode === "Yearly" ? +tool.monthly_cost * 12 : tool.monthly_cost;
 
         if (!acc[tool.category]) acc[tool.category] = 0;
@@ -50,7 +61,7 @@ const SpendOverview = () => {
 
         return acc;
       }, {}),
-    [mode, tools],
+    [mode, toolsData],
   );
 
   // Convert the grouped data to an object that has category/total properties
@@ -59,8 +70,8 @@ const SpendOverview = () => {
     total,
   }));
 
-  if (loading) return <div>{loading}</div>;
-  if (error) return <div>{error.message}</div>;
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error loading data</p>;
   return (
     <div className="flex flex-col gap-4">
       <SpendTable data={updatedTools} />

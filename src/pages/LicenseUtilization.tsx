@@ -1,31 +1,36 @@
 import UtilizationTable from "@/components/LicenseUtilization/UtilizationTable";
 import { groupLicensesByTool } from "@/functions/groupLicensesByTool";
-import { useSupabaseData } from "@/hooks/useSupabaseData";
+import { getLicenseUtilization } from "@/lib/queries";
 import type { LicenseUtilization } from "@/types/Data";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const LicenseUtilization = () => {
-  // Fetch tools form supabase
-  const {
-    data: licenseUtilization,
-    loading,
-    error,
-  } = useSupabaseData<LicenseUtilization>(
-    "licenses",
-    `id,
-      is_active,
-      tool:tools (
-        id,
-        name
-      )`,
-  );
+  const [licenseData, setLicenseData] = useState<LicenseUtilization[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getLicenseUtilization();
+        setLicenseData(data);
+      } catch (err) {
+        console.error("Failed to load license utilization data", err);
+        setError(err as Error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const groupedLicenses = useMemo(() => {
-    return groupLicensesByTool(licenseUtilization);
-  }, [licenseUtilization]);
+    return groupLicensesByTool(licenseData);
+  }, [licenseData]);
 
-  if (loading) return <div>{loading}</div>;
-  if (error) return <div>{error.message}</div>;
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error loading data</p>;
 
   return (
     <div>
