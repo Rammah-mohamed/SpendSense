@@ -14,7 +14,6 @@ const SpendOverview = () => {
   const [error, setError] = useState<Error | null>(null);
 
   // Fetch tools form supabase
-
   useEffect(() => {
     const fetchData = async () => {
       try {

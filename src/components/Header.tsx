@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-type Active = "Dashbaord" | "Utilization" | "Renewals" | "Redundancy" | "Export";
+type Active = "Spend" | "Utilization" | "Renewals" | "Redundancy" | "Export";
 
 type Props = {
   text: Active;

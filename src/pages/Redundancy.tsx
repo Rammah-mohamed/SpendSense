@@ -1,5 +1,11 @@
+import RedundancyHeatmap from "@/components/Redundancy/RedundancyHeatmap";
+
 const Redundancy = () => {
-  return <div>Redundancy</div>;
+  return (
+    <div>
+      <RedundancyHeatmap />
+    </div>
+  );
 };
 
 export default Redundancy;

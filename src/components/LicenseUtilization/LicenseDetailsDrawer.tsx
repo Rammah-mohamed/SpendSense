@@ -1,6 +1,7 @@
 import { supabase } from "@/lib/supabase";
 import type { LicenseUtilization } from "@/types/Data";
 import { useEffect, useState } from "react";
+import { Button } from "../ui/button";
 
 type Props = {
   toolId: string | null;
@@ -48,9 +49,12 @@ export default function LicenseDetailsDrawer({ toolId, toolName, open, onClose }
     <div className="fixed right-0 top-0 h-full w-96 bg-white shadow-lg z-50 p-6 overflow-y-auto">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-bold">Licenses for {toolName}</h2>
-        <button onClick={onClose} className="text-gray-500 hover:text-black">
-          ✕
-        </button>
+        <Button
+          onClick={onClose}
+          className="bg-transparent text-gray-500 hover:text-black hover:bg-transparent  cursor-pointer"
+        >
+          X
+        </Button>
       </div>
 
       {loading ? (
@@ -75,12 +79,12 @@ export default function LicenseDetailsDrawer({ toolId, toolName, open, onClose }
               <p className="text-sm mt-1 text-gray-600">
                 Assigned: {new Date(license?.assigned_at).toLocaleDateString()}
               </p>
-              <button
-                className="text-sm mt-2 text-blue-600 hover:underline"
+              <Button
+                className="text-sm mt-2 bg-transparent text-blue-600 hover:underline hover:bg-transparent cursor-pointer"
                 onClick={() => alert("Simulated: Unassigned!")}
               >
                 Unassign
-              </button>
+              </Button>
             </li>
           ))}
         </ul>

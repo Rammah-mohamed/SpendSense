@@ -1,21 +1,32 @@
 // src/pages/renewals.tsx
 import { useEffect, useState } from "react";
-import { getUpcomingRenewals } from "@/lib/queries";
 import { getRenewalUrgencyColor } from "@/functions/getRenewalUrgencyColor";
+import { getUpcomingRenewalsWithUtilization } from "@/lib/queries";
+import UpcomingRenewals from "@/components/Renewals/UpcomingRenewals";
+import NotificationCard from "@/components/Renewals/NotificationCard";
+import LicenseDetailsDrawer from "@/components/LicenseUtilization/LicenseDetailsDrawer";
 
 type Tool = {
   id: string;
   name: string;
   renewal_date: string;
   monthly_cost: number;
+  utilization: number;
+  activeLicenses: number;
+  totalLicenses: number;
 };
 
 const Renewals = () => {
   const [tools, setTools] = useState<Tool[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedTool, setSelectedTool] = useState<{ id: string; name: string } | null>(null);
+
+  const handleReviewClick = (toolId: string, toolName: string) => {
+    setSelectedTool({ id: toolId, name: toolName });
+  };
 
   useEffect(() => {
-    getUpcomingRenewals()
+    getUpcomingRenewalsWithUtilization()
       .then(setTools)
       .finally(() => setLoading(false));
   }, []);
@@ -23,50 +34,37 @@ const Renewals = () => {
   if (loading) return <p className="p-4">Loading upcoming renewals...</p>;
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-6">Upcoming Renewals</h1>
-
-      {tools.length === 0 ? (
-        <p>No upcoming renewals in the next 60 days.</p>
-      ) : (
-        <ul className="space-y-4">
-          {tools.map((tool) => {
-            const urgency = getRenewalUrgencyColor(tool.renewal_date);
-            const badgeColor = {
-              red: "bg-red-100 text-red-800",
-              yellow: "bg-yellow-100 text-yellow-800",
-              green: "bg-green-100 text-green-800",
-            }[urgency];
-
-            return (
-              <li
-                key={tool.id}
-                className="border border-gray-200 rounded-lg p-4 shadow-sm flex justify-between items-center"
-              >
-                <div>
-                  <h2 className="text-lg font-semibold">{tool.name}</h2>
-                  <p className="text-sm text-gray-600">
-                    Renews on:{" "}
-                    <span className="font-medium">
-                      {new Date(tool.renewal_date).toLocaleDateString()}
-                    </span>
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Monthly Cost: ${tool.monthly_cost.toFixed(2)}
-                  </p>
-                </div>
-                <span className={`text-sm px-3 py-1 rounded-full font-medium ${badgeColor}`}>
-                  {urgency === "red"
-                    ? "Urgent (7d)"
-                    : urgency === "yellow"
-                    ? "Soon (30d)"
-                    : "Upcoming (60d)"}
-                </span>
-              </li>
-            );
-          })}
-        </ul>
-      )}
+    <div className="flex flex-col gap-4">
+      <section className="flex-1">
+        <h1 className="text-xl font-semibold mb-4">Upcoming Renewals</h1>
+        <UpcomingRenewals tools={tools} getRenewalUrgencyColor={getRenewalUrgencyColor} />;
+      </section>
+      <section className="flex-1">
+        <h2 className="text-xl font-semibold mb-4">Renewal Actions</h2>
+        <div className="space-y-2">
+          {tools.map((tool) => (
+            <NotificationCard
+              key={tool.id}
+              toolId={tool.id}
+              name={tool.name}
+              renewal_date={tool.renewal_date}
+              monthly_cost={tool.monthly_cost}
+              utilization={tool.utilization}
+              activeLicenses={tool.activeLicenses}
+              totalLicenses={tool.totalLicenses}
+              onReviewClick={handleReviewClick}
+            />
+          ))}
+        </div>
+        {selectedTool && (
+          <LicenseDetailsDrawer
+            toolId={selectedTool.id}
+            toolName={selectedTool.name}
+            open={!!selectedTool}
+            onClose={() => setSelectedTool(null)}
+          />
+        )}
+      </section>
     </div>
   );
 };
