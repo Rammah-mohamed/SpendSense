@@ -1,8 +1,7 @@
 import { getLicenseWithTools } from "@/lib/queries";
 import { useEffect, useMemo, useState } from "react";
-import { Switch } from "../ui/switch";
-import { Skeleton } from "../ui/skeleton";
 import { cn } from "@/lib/utils";
+import LoadingSpinner from "../LoadingSpinner";
 
 type ToolUsage = {
   id: string;
@@ -18,17 +17,13 @@ const RedundancyHeatmap = () => {
   const [toolUsageData, setToolUsageData] = useState<ToolUsage[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<Error | null>(null);
-  const [showRedundantOnly, setShowRedundantOnly] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const data = await getLicenseWithTools();
 
-        console.log(data);
-
         const usageMap = new Map<string, ToolUsage>();
-
         data.forEach((license) => {
           const tool = license.tools;
           const key = tool.id;
@@ -82,24 +77,19 @@ const RedundancyHeatmap = () => {
       map.get(tool.category)!.push(tool);
     });
 
-    return Array.from(map.entries()).filter(([, tools]) => !showRedundantOnly || tools.length > 1);
-  }, [toolUsageData, showRedundantOnly]);
+    return Array.from(map.entries()).filter(([, tools]) => tools.length > 1);
+  }, [toolUsageData]);
 
   if (error) return <p>Error loading data</p>;
   return (
-    <div className="space-y-6">
-      <div className="flex items-center gap-2">
-        <Switch checked={showRedundantOnly} onCheckedChange={setShowRedundantOnly} />
-        <span>Show only redundant categories</span>
-      </div>
-
+    <div className="flex">
       {loading ? (
-        <Skeleton className="h-40 w-full" />
+        <LoadingSpinner />
       ) : (
         groupedByCategory.map(([category, tools]) => (
           <div key={category}>
             <h3 className="text-lg font-semibold mb-2">{category}</h3>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-2">
               {tools.map((tool) => (
                 <div
                   key={tool.id}

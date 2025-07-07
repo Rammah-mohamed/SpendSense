@@ -1,11 +1,12 @@
+import { useEffect, useMemo, useState } from "react";
 import ChartWrapper from "@/components/ChartWrapper";
 import { SpendByCategoryChart } from "@/components/SpendOverview/SpendByCategoryChart";
 import SpendTable from "@/components/SpendOverview/SpendTable";
 import { formatCurrency } from "@/functions/formatCurrency";
 import { getTools } from "@/lib/queries";
 import type { Tool } from "@/types/Data";
-import { useEffect, useMemo, useState } from "react";
 import { ResponsiveContainer } from "recharts";
+import LoadingSpinner from "@/components/LoadingSpinner";
 
 const SpendOverview = () => {
   const [mode, setMode] = useState<"Monthly" | "Yearly">("Monthly");
@@ -20,7 +21,7 @@ const SpendOverview = () => {
         const data = await getTools();
         setToolsData(data);
       } catch (err) {
-        console.error("Failed to load license utilization data", err);
+        console.error("Failed to load tools data", err);
         setError(err as Error);
       } finally {
         setLoading(false);
@@ -69,7 +70,7 @@ const SpendOverview = () => {
     total,
   }));
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <LoadingSpinner />;
   if (error) return <p>Error loading data</p>;
   return (
     <div className="flex flex-col gap-4">

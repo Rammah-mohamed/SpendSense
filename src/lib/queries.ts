@@ -1,4 +1,4 @@
-import type { LicensesWithTools, LicenseUtilization, Tool } from "@/types/Data";
+import type { LicensesWithTools, License, Tool } from "@/types/Data";
 import { supabase } from "./supabase";
 import type { User } from "@supabase/supabase-js";
 
@@ -57,7 +57,7 @@ export async function getUsers(): Promise<User[]> {
   return data as unknown as User[];
 }
 
-export async function getLicenseUtilization(): Promise<LicenseUtilization[]> {
+export async function getLicenseUtilization(): Promise<License[]> {
   const { data, error } = await supabase.from("licenses").select(`
       id,
       tool_id, 
@@ -70,7 +70,7 @@ export async function getLicenseUtilization(): Promise<LicenseUtilization[]> {
     `);
 
   if (error) throw error;
-  return data as unknown as LicenseUtilization[];
+  return data as unknown as License[];
 }
 
 export async function getLicenseWithTools(): Promise<LicensesWithTools[]> {

@@ -8,7 +8,7 @@ export type Tool = {
   departments: { name: string } | string;
 };
 
-export type LicenseUtilization = {
+export type License = {
   id: string;
   tool_id: string;
   user_id: string;
@@ -19,14 +19,6 @@ export type LicenseUtilization = {
     full_name: string;
     email: string;
   };
-};
-
-export type SortedLicenseUtilization = {
-  toolId: string;
-  toolName: string;
-  totalLicenses: number;
-  activeLicenses: number;
-  utilization: number;
 };
 
 export type Renewals = {

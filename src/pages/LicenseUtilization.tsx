@@ -1,11 +1,12 @@
 import UtilizationTable from "@/components/LicenseUtilization/UtilizationTable";
+import LoadingSpinner from "@/components/LoadingSpinner";
 import { groupLicensesByTool } from "@/functions/groupLicensesByTool";
 import { getLicenseUtilization } from "@/lib/queries";
-import type { LicenseUtilization } from "@/types/Data";
+import type { License } from "@/types/Data";
 import { useEffect, useMemo, useState } from "react";
 
 const LicenseUtilization = () => {
-  const [licenseData, setLicenseData] = useState<LicenseUtilization[]>([]);
+  const [licenseData, setLicenseData] = useState<License[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 
@@ -29,7 +30,7 @@ const LicenseUtilization = () => {
     return groupLicensesByTool(licenseData);
   }, [licenseData]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <LoadingSpinner />;
   if (error) return <p>Error loading data</p>;
 
   return (

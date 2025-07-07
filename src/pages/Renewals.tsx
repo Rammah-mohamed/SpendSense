@@ -5,6 +5,7 @@ import { getUpcomingRenewalsWithUtilization } from "@/lib/queries";
 import UpcomingRenewals from "@/components/Renewals/UpcomingRenewals";
 import NotificationCard from "@/components/Renewals/NotificationCard";
 import LicenseDetailsDrawer from "@/components/LicenseUtilization/LicenseDetailsDrawer";
+import LoadingSpinner from "@/components/LoadingSpinner";
 
 type Tool = {
   id: string;
@@ -18,20 +19,33 @@ type Tool = {
 
 const Renewals = () => {
   const [tools, setTools] = useState<Tool[]>([]);
-  const [loading, setLoading] = useState(true);
   const [selectedTool, setSelectedTool] = useState<{ id: string; name: string } | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
 
   const handleReviewClick = (toolId: string, toolName: string) => {
     setSelectedTool({ id: toolId, name: toolName });
   };
 
+  // Fetch Renewalss form supabase
   useEffect(() => {
-    getUpcomingRenewalsWithUtilization()
-      .then(setTools)
-      .finally(() => setLoading(false));
+    const fetchData = async () => {
+      try {
+        const data = await getUpcomingRenewalsWithUtilization();
+        setTools(data);
+      } catch (err) {
+        console.error("Failed to load Renewals data", err);
+        setError(err as Error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
   }, []);
 
-  if (loading) return <p className="p-4">Loading upcoming renewals...</p>;
+  if (loading) return <LoadingSpinner />;
+  if (error) return <p>Error loading data</p>;
 
   return (
     <div className="flex flex-col gap-4">

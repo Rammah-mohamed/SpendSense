@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SpendOverview from "./pages/SpendOverview";
-import LicenseUtilization from "./pages/LicenseUtilization";
 import Renewals from "./pages/Renewals";
 import Redundancy from "./pages/Redundancy";
 import Export from "./pages/Export";
 import Layout from "./components/Layout";
+import LicenseUtilization from "./pages/LicenseUtilization";
 
 const App = () => {
   return (

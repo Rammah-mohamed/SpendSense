@@ -9,8 +9,11 @@ export function SpendByCategoryChart({ data }: Props) {
     <ResponsiveContainer width="100%" height={400}>
       <BarChart data={data}>
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="category" />
-        <YAxis tickFormatter={(value) => `$${value.toLocaleString()}`} />
+        <XAxis dataKey="category" className="text-xs font-semibold" />
+        <YAxis
+          tickFormatter={(value) => `$${value.toLocaleString()}`}
+          className="text-xs font-semibold"
+        />
         <Tooltip formatter={(value) => `$${value.toLocaleString()}`} />
         <Bar dataKey="total" fill="#4f46e5" />
       </BarChart>

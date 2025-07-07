@@ -1,14 +1,14 @@
-import type { Utilization } from "@/types/Data";
+import type { License } from "@/types/Data";
 
-export const groupLicensesByTool = (licenses: Utilization[]) => {
+export const groupLicensesByTool = (licenses: License[]) => {
   const summary = new Map();
 
   licenses.forEach(({ is_active, tool }) => {
-    const key = tool.id;
+    const key = tool?.id;
     if (!summary.has(key)) {
       summary.set(key, {
-        toolId: tool.id,
-        toolName: tool.name,
+        toolId: tool?.id,
+        toolName: tool?.name,
         totalLicenses: 0,
         activeLicenses: 0,
       });
