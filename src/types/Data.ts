@@ -21,6 +21,12 @@ export type License = {
   };
 };
 
+export type ActiveLicense = {
+  tool_id: string;
+  assigned_at: string;
+  tools: { id: string; name: string; monthly_cost: number };
+};
+
 export type Renewals = {
   name: string;
   monthly_cost: number;

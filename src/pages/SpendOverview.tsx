@@ -3,14 +3,17 @@ import ChartWrapper from "@/components/ChartWrapper";
 import { SpendByCategoryChart } from "@/components/SpendOverview/SpendByCategoryChart";
 import SpendTable from "@/components/SpendOverview/SpendTable";
 import { formatCurrency } from "@/functions/formatCurrency";
-import { getTools } from "@/lib/queries";
-import type { Tool } from "@/types/Data";
+import { getActiveLicenseWithCost, getTools } from "@/lib/queries";
+import type { ActiveLicense, Tool } from "@/types/Data";
 import { ResponsiveContainer } from "recharts";
 import LoadingSpinner from "@/components/LoadingSpinner";
+import dayjs from "dayjs";
+import SpendOverTimeChart from "@/components/SpendOverview/SpendOverTimeChart";
 
 const SpendOverview = () => {
   const [mode, setMode] = useState<"Monthly" | "Yearly">("Monthly");
   const [toolsData, setToolsData] = useState<Tool[]>([]);
+  const [license, setLicense] = useState<ActiveLicense[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 
@@ -18,8 +21,10 @@ const SpendOverview = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await getTools();
-        setToolsData(data);
+        const toolsData = await getTools();
+        const licenseData = await getActiveLicenseWithCost();
+        setToolsData(toolsData);
+        setLicense(licenseData);
       } catch (err) {
         console.error("Failed to load tools data", err);
         setError(err as Error);
@@ -65,23 +70,46 @@ const SpendOverview = () => {
   );
 
   // Convert the grouped data to an object that has category/total properties
-  const chartData = Object.entries(grouped).map(([category, total]) => ({
+  const barChartData = Object.entries(grouped).map(([category, total]) => ({
     category,
     total,
   }));
+
+  // Calulate Licenses cost for each month
+  const monthlySpend = license?.reduce((acc: Record<string, number>, license) => {
+    const month = dayjs(license.assigned_at).format("YYYY-MM");
+    acc[month] = (acc[month] || 0) + license.tools.monthly_cost;
+    return acc;
+  }, {});
+
+  const monthlySpendArray = Object.entries(monthlySpend).map(([month, total]) => ({
+    month,
+    total,
+  }));
+
+  const lineChartData = monthlySpendArray.sort((a, b) =>
+    dayjs(a.month).isAfter(dayjs(b.month)) ? 1 : -1,
+  );
 
   if (loading) return <LoadingSpinner />;
   if (error) return <p>Error loading data</p>;
   return (
     <div className="flex flex-col gap-4">
       <SpendTable data={updatedTools} />
-      <ResponsiveContainer width="100%">
+      <ResponsiveContainer>
         <ChartWrapper
-          title={mode + " spend per category"}
+          title={mode + " Spend Per Category"}
           hasData={true}
-          children={<SpendByCategoryChart data={chartData} />}
+          children={<SpendByCategoryChart data={barChartData} />}
           mode={mode === "Monthly" ? "Yearly" : "Monthly"}
           setMode={setMode}
+        />
+      </ResponsiveContainer>
+      <ResponsiveContainer>
+        <ChartWrapper
+          title={"Monthly Spend Over Time"}
+          hasData={true}
+          children={<SpendOverTimeChart data={lineChartData} />}
         />
       </ResponsiveContainer>
     </div>

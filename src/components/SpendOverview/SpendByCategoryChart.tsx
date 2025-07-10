@@ -1,8 +1,8 @@
 import { Tooltip, ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Bar } from "recharts";
 
-interface Props {
+type Props = {
   data: { category: string; total: number }[];
-}
+};
 
 export function SpendByCategoryChart({ data }: Props) {
   return (

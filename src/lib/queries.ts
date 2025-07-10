@@ -1,4 +1,4 @@
-import type { LicensesWithTools, License, Tool } from "@/types/Data";
+import type { LicensesWithTools, License, Tool, ActiveLicense } from "@/types/Data";
 import { supabase } from "./supabase";
 import type { User } from "@supabase/supabase-js";
 
@@ -71,6 +71,16 @@ export async function getLicenseUtilization(): Promise<License[]> {
 
   if (error) throw error;
   return data as unknown as License[];
+}
+
+export async function getActiveLicenseWithCost(): Promise<ActiveLicense[]> {
+  const { data, error } = await supabase
+    .from("licenses")
+    .select(`tool_id, assigned_at, tools(name, monthly_cost)`)
+    .eq("is_active", true);
+
+  if (error) throw error;
+  return data as unknown as ActiveLicense[];
 }
 
 export async function getLicenseWithTools(): Promise<LicensesWithTools[]> {
