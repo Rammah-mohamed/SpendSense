@@ -7,3 +7,9 @@ export function getRenewalUrgencyColor(renewalDate: string): "red" | "yellow" | 
   if (diffDays <= 30) return "yellow";
   return "green";
 }
+
+export function getUnderUtilizationColor(risk: string): "red" | "yellow" | "green" {
+  if (risk === "High") return "red";
+  if (risk === "Medium") return "yellow";
+  return "green";
+}

@@ -65,7 +65,8 @@ export async function getLicenseUtilization(): Promise<License[]> {
       is_active,
       tool:tools (
         id,
-        name
+        name,
+        monthly_cost
       )
     `);
 

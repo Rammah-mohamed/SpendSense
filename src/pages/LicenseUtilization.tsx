@@ -1,6 +1,6 @@
 import UtilizationTable from "@/components/LicenseUtilization/UtilizationTable";
 import LoadingSpinner from "@/components/LoadingSpinner";
-import { groupLicensesByTool } from "@/functions/groupLicensesByTool";
+import { groupLicensesByTool, underutilizationAlerts } from "@/functions/calculateUtilization";
 import { getLicenseUtilization } from "@/lib/queries";
 import type { License } from "@/types/Data";
 import { useEffect, useMemo, useState } from "react";
@@ -30,12 +30,16 @@ const LicenseUtilization = () => {
     return groupLicensesByTool(licenseData);
   }, [licenseData]);
 
+  const underUtiliztion = useMemo(() => {
+    return underutilizationAlerts(licenseData);
+  }, [licenseData]);
+
   if (loading) return <LoadingSpinner />;
   if (error) return <p>Error loading data</p>;
 
   return (
     <div>
-      <UtilizationTable data={groupedLicenses} />
+      <UtilizationTable data={groupedLicenses} underUtilization={underUtiliztion} />
     </div>
   );
 };

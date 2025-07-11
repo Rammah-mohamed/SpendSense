@@ -1,6 +1,6 @@
 // src/pages/renewals.tsx
 import { useEffect, useState } from "react";
-import { getRenewalUrgencyColor } from "@/functions/getRenewalUrgencyColor";
+import { getRenewalUrgencyColor } from "@/functions/getColors";
 import { getUpcomingRenewalsWithUtilization } from "@/lib/queries";
 import UpcomingRenewals from "@/components/Renewals/UpcomingRenewals";
 import NotificationCard from "@/components/Renewals/NotificationCard";
