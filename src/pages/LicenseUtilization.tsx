@@ -1,6 +1,11 @@
+import UtilizationChart from "@/components/LicenseUtilization/UtilizationChart";
 import UtilizationTable from "@/components/LicenseUtilization/UtilizationTable";
 import LoadingSpinner from "@/components/LoadingSpinner";
-import { groupLicensesByTool, underutilizationAlerts } from "@/functions/calculateUtilization";
+import {
+  groupLicensesByDeparments,
+  groupLicensesByTool,
+  underutilizationAlerts,
+} from "@/functions/calculateUtilization";
 import { getLicenseUtilization } from "@/lib/queries";
 import type { License } from "@/types/Data";
 import { useEffect, useMemo, useState } from "react";
@@ -26,8 +31,12 @@ const LicenseUtilization = () => {
     fetchData();
   }, []);
 
-  const groupedLicenses = useMemo(() => {
+  const groupedLicensesByTools = useMemo(() => {
     return groupLicensesByTool(licenseData);
+  }, [licenseData]);
+
+  const groupedLicensesByDepartments = useMemo(() => {
+    return groupLicensesByDeparments(licenseData);
   }, [licenseData]);
 
   const underUtiliztion = useMemo(() => {
@@ -36,10 +45,11 @@ const LicenseUtilization = () => {
 
   if (loading) return <LoadingSpinner />;
   if (error) return <p>Error loading data</p>;
-
+  console.log(groupedLicensesByDepartments);
   return (
     <div>
-      <UtilizationTable data={groupedLicenses} underUtilization={underUtiliztion} />
+      <UtilizationTable data={groupedLicensesByTools} underUtilization={underUtiliztion} />
+      <UtilizationChart data={groupedLicensesByDepartments} />
     </div>
   );
 };

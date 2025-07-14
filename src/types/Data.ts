@@ -13,7 +13,13 @@ export type License = {
   tool_id: string;
   user_id: string;
   is_active: boolean;
-  tool: { id: string; name: string; monthly_cost: number };
+  tools: {
+    id: string;
+    name: string;
+    monthly_cost: number;
+    department_id: string;
+    departments: { name: string };
+  };
   assigned_at: string;
   users: {
     full_name: string;

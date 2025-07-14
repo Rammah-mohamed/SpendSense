@@ -4,12 +4,12 @@ import { formatCurrency } from "./formatCurrency";
 export const groupLicensesByTool = (licenses: License[]) => {
   const summary = new Map();
 
-  licenses.forEach(({ is_active, tool }) => {
-    const key = tool?.id;
+  licenses.forEach(({ is_active, tools }) => {
+    const key = tools?.id;
     if (!summary.has(key)) {
       summary.set(key, {
-        toolId: tool?.id,
-        toolName: tool?.name,
+        toolId: tools?.id,
+        toolName: tools?.name,
         totalLicenses: 0,
         activeLicenses: 0,
       });
@@ -26,6 +26,55 @@ export const groupLicensesByTool = (licenses: License[]) => {
   return Array.from(summary.values());
 };
 
+export const groupLicensesByDeparments = (licenses: License[]) => {
+  type DepartmentToolUsage = {
+    department: string;
+    tool: string;
+    totalLicenses: number;
+    activeLicenses: number;
+    utilization: number;
+  };
+
+  const usageMap = new Map<string, DepartmentToolUsage>();
+
+  licenses.forEach((license) => {
+    const key = `${license?.tools?.departments?.name}-${license?.tools?.name}`;
+
+    if (!usageMap.has(key)) {
+      usageMap.set(key, {
+        department: license?.tools?.departments?.name,
+        tool: license?.tools?.name,
+        totalLicenses: 0,
+        activeLicenses: 0,
+        utilization: 0,
+      });
+    }
+
+    const entry = usageMap.get(key)!;
+    entry.totalLicenses += 1;
+    if (license?.is_active) entry.activeLicenses += 1;
+  });
+
+  const usageMapArray = Array.from(usageMap.values()).map((entry) => ({
+    ...entry,
+    utilization: Math.round((entry.activeLicenses / entry.totalLicenses) * 100),
+  }));
+
+  const departmentMap = new Map<string, Record<string, unknown>>();
+
+  usageMapArray.forEach(({ department, tool, utilization }) => {
+    if (!departmentMap.has(department)) {
+      departmentMap.set(department, { department });
+    }
+
+    departmentMap.get(department)![tool] = utilization;
+  });
+
+  const chartData = Array.from(departmentMap.values());
+
+  return chartData;
+};
+
 export const underutilizationAlerts = (licenses: License[]) => {
   const usageMap = new Map<
     string,
@@ -38,21 +87,21 @@ export const underutilizationAlerts = (licenses: License[]) => {
   >();
 
   licenses.forEach((license) => {
-    const tool = license.tool;
-    const key = tool.name;
+    const tool = license?.tools;
+    const key = tool?.name;
 
     if (!usageMap.has(key)) {
       usageMap.set(key, {
-        name: tool.name,
+        name: tool?.name,
         totalLicenses: 0,
         activeLicenses: 0,
-        costPerLicense: license.tool.monthly_cost,
+        costPerLicense: license?.tools?.monthly_cost,
       });
     }
 
     const entry = usageMap.get(key)!;
     entry.totalLicenses += 1;
-    if (license.is_active) entry.activeLicenses += 1;
+    if (license?.is_active) entry.activeLicenses += 1;
   });
 
   const alerts = Array.from(usageMap.values())

@@ -63,10 +63,12 @@ export async function getLicenseUtilization(): Promise<License[]> {
       tool_id, 
       user_id,
       is_active,
-      tool:tools (
+      tools (
         id,
         name,
-        monthly_cost
+        monthly_cost,
+        department_id,
+        departments ( name )
       )
     `);
 
