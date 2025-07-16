@@ -1,6 +1,7 @@
-import type { LicensesWithTools, License, Tool, ActiveLicense } from "@/types/Data";
+import type { License, Tool, ActiveLicense, ToolUsage, LicensesWithTools } from "@/types/dataTypes";
 import { supabase } from "./supabase";
 import type { User } from "@supabase/supabase-js";
+import { formatCurrency } from "@/functions/formatCurrency";
 
 // src/lib/queries.ts
 export async function getUpcomingRenewalsWithUtilization() {
@@ -86,19 +87,54 @@ export async function getActiveLicenseWithCost(): Promise<ActiveLicense[]> {
   return data as unknown as ActiveLicense[];
 }
 
-export async function getLicenseWithTools(): Promise<LicensesWithTools[]> {
-  const { data, error } = await supabase.from("licenses").select(`
+export async function getLicenseWithTools(): Promise<ToolUsage[]> {
+  const { data, error } = (await supabase.from("licenses").select(`
     tool_id,
     is_active,
     tools (
       id,
       name,
+      monthly_cost,
       category,
       department_id,
       departments ( name )
     )
-  `);
+  `)) as { data: LicensesWithTools[] | null; error: unknown };
+
+  const usageMap = new Map<string, ToolUsage>();
+  data?.forEach((license) => {
+    const tool = license.tools;
+    const key = tool.id;
+
+    if (!usageMap.has(key)) {
+      usageMap.set(key, {
+        id: tool.id,
+        name: tool.name,
+        category: tool.category,
+        monthlyCost: tool.monthly_cost,
+        department: tool.departments?.name || "Unknown",
+        totalLicenses: 0,
+        activeLicenses: 0,
+        usagePercent: 0,
+      });
+    }
+
+    const usage = usageMap.get(key)!;
+    usage.totalLicenses += 1;
+    if (license.is_active) usage.activeLicenses += 1;
+  });
+
+  const result = Array.from(usageMap.values()).map((tool) => {
+    const percent =
+      tool.totalLicenses > 0 ? Math.round((tool.activeLicenses / tool.totalLicenses) * 100) : 0;
+
+    const cost = formatCurrency(tool.totalLicenses * tool.monthlyCost);
+
+    const action = percent < 80 ? "Keep" : percent < 50 ? "Investigate" : "Recommend Cancel";
+
+    return { ...tool, usagePercent: percent, cost, action };
+  });
 
   if (error) throw error;
-  return data as unknown as LicensesWithTools[];
+  return result;
 }

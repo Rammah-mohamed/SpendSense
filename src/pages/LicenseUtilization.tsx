@@ -7,7 +7,7 @@ import {
   underutilizationAlerts,
 } from "@/functions/calculateUtilization";
 import { getLicenseUtilization } from "@/lib/queries";
-import type { License } from "@/types/Data";
+import type { License } from "@/types/dataTypes";
 import { useEffect, useMemo, useState } from "react";
 
 const LicenseUtilization = () => {

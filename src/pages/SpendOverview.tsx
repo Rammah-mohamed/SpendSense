@@ -4,7 +4,7 @@ import { SpendByCategoryChart } from "@/components/SpendOverview/SpendByCategory
 import SpendTable from "@/components/SpendOverview/SpendTable";
 import { formatCurrency } from "@/functions/formatCurrency";
 import { getActiveLicenseWithCost, getTools } from "@/lib/queries";
-import type { ActiveLicense, Tool } from "@/types/Data";
+import type { ActiveLicense, Tool } from "@/types/dataTypes";
 import { ResponsiveContainer } from "recharts";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import dayjs from "dayjs";

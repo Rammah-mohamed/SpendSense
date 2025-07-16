@@ -49,10 +49,35 @@ export type LicensesWithTools = {
   tools: {
     id: string;
     name: string;
+    monthly_cost: number;
     category: string;
     department_id: string;
     departments: {
       name: string;
-    }[];
+    };
   };
+};
+
+export type ToolUsage = {
+  id: string;
+  name: string;
+  category: string;
+  department: string;
+  monthlyCost: number;
+  usagePercent: number;
+  totalLicenses: number;
+  activeLicenses: number;
+};
+
+export type RedundancyTableData = {
+  id: string;
+  name: string;
+  category: string;
+  department: string;
+  cost: number;
+  monthlyCost: number;
+  usagePercent: number;
+  totalLicenses: number;
+  activeLicenses: number;
+  action?: string;
 };

@@ -1,4 +1,4 @@
-import type { License } from "@/types/Data";
+import type { License } from "@/types/dataTypes";
 import { formatCurrency } from "./formatCurrency";
 
 export const groupLicensesByTool = (licenses: License[]) => {

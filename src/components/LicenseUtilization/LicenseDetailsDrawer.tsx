@@ -1,5 +1,5 @@
 import { supabase } from "@/lib/supabase";
-import type { LicenseUtilization } from "@/types/Data";
+import type { LicenseUtilization } from "@/types/dataTypes";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 

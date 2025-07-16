@@ -7,7 +7,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { useSortableData } from "@/hooks/useSortableData";
-import type { Tool } from "@/types/Data";
+import type { Tool } from "@/types/dataTypes";
 
 const columnKeys: (keyof Tool)[] = [
   "id",
