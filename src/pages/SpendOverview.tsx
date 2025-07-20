@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import ChartWrapper from "@/components/ChartWrapper";
 import { SpendByCategoryChart } from "@/components/SpendOverview/SpendByCategoryChart";
 import SpendTable from "@/components/SpendOverview/SpendTable";
@@ -9,6 +9,7 @@ import { ResponsiveContainer } from "recharts";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import dayjs from "dayjs";
 import SpendOverTimeChart from "@/components/SpendOverview/SpendOverTimeChart";
+import Dropdown from "@/components/Dropdown";
 
 const SpendOverview = () => {
   const [mode, setMode] = useState<"Monthly" | "Yearly">("Monthly");
@@ -16,6 +17,7 @@ const SpendOverview = () => {
   const [license, setLicense] = useState<ActiveLicense[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
+  const chartRef = useRef<HTMLDivElement>(null);
 
   // Fetch tools form supabase
   useEffect(() => {
@@ -95,12 +97,14 @@ const SpendOverview = () => {
   if (error) return <p>Error loading data</p>;
   return (
     <div className="flex flex-col gap-4">
+      <Dropdown data={updatedTools} text={["CSV", "PDF", "PNG"]} />
       <SpendTable data={updatedTools} />
+      <Dropdown ref={chartRef} text={["PDF", "PNG"]} />
       <ResponsiveContainer>
         <ChartWrapper
           title={mode + " Spend Per Category"}
           hasData={true}
-          children={<SpendByCategoryChart data={barChartData} />}
+          children={<SpendByCategoryChart ref={chartRef} data={barChartData} />}
           mode={mode === "Monthly" ? "Yearly" : "Monthly"}
           setMode={setMode}
         />

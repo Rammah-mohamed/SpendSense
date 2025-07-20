@@ -2,11 +2,12 @@ import { Tooltip, ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Ba
 
 type Props = {
   data: { category: string; total: number }[];
+  ref: React.RefObject<HTMLDivElement | null>;
 };
 
-export function SpendByCategoryChart({ data }: Props) {
+export function SpendByCategoryChart({ data, ref }: Props) {
   return (
-    <ResponsiveContainer width="100%" height={400}>
+    <ResponsiveContainer ref={ref} width="100%" height={400}>
       <BarChart data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="category" className="text-xs font-semibold" />
