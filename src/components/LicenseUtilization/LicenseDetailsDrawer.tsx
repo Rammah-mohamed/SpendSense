@@ -1,7 +1,8 @@
 import { supabase } from "@/lib/supabase";
-import type { LicenseUtilization } from "@/types/dataTypes";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
+import type { License } from "@/types/dataTypes";
+import { useTheme } from "@/context/ThemeContext";
 
 type Props = {
   toolId: string | null;
@@ -11,8 +12,9 @@ type Props = {
 };
 
 export default function LicenseDetailsDrawer({ toolId, toolName, open, onClose }: Props) {
-  const [licenses, setLicenses] = useState<LicenseUtilization[]>([]);
+  const [licenses, setLicenses] = useState<License[]>([]);
   const [loading, setLoading] = useState(false);
+  const { theme } = useTheme();
 
   async function getToolLicenses(toolId: string) {
     const { data, error } = await supabase
@@ -29,7 +31,7 @@ export default function LicenseDetailsDrawer({ toolId, toolName, open, onClose }
 
     if (error) throw error;
 
-    const licenseData = data as unknown as LicenseUtilization[];
+    const licenseData = data as unknown as License[];
 
     return licenseData;
   }
@@ -46,12 +48,20 @@ export default function LicenseDetailsDrawer({ toolId, toolName, open, onClose }
   console.log("License data:", licenses);
 
   return (
-    <div className="fixed right-0 top-0 h-full w-96 bg-white shadow-lg z-50 p-6 overflow-y-auto">
+    <div
+      className={`fixed right-0 top-0 h-full w-96 ${
+        theme === "dark" ? "bg-bg-dark" : "bg-bg"
+      } shadow-lg z-50 p-6 overflow-y-auto`}
+    >
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold">Licenses for {toolName}</h2>
+        <h2 className={`text-xl font-bold ${theme === "dark" ? "text-text-dark" : "text-text"}`}>
+          Licenses for {toolName}
+        </h2>
         <Button
           onClick={onClose}
-          className="bg-transparent text-gray-500 hover:text-black hover:bg-transparent  cursor-pointer"
+          className={`bg-transparent ${
+            theme === "dark" ? "text-text-muted-dark" : "text-text-muted"
+          } hover:text-black hover:bg-transparent  cursor-pointer`}
         >
           X
         </Button>
@@ -62,15 +72,34 @@ export default function LicenseDetailsDrawer({ toolId, toolName, open, onClose }
       ) : (
         <ul className="space-y-4">
           {licenses.map((license) => (
-            <li key={license.id} className="border rounded-lg p-3">
+            <li
+              key={license.id}
+              className={`border rounded-lg p-3 ${
+                theme === "dark" ? "bg-surface-dark" : "bg-surface"
+              }`}
+            >
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="font-medium">{license?.users.full_name}</p>
-                  <p className="text-sm text-gray-500">{license?.users.email}</p>
+                  <p className={`font-medium ${theme === "dark" ? "text-text-dark" : "text-text"}`}>
+                    {license?.users.full_name}
+                  </p>
+                  <p
+                    className={`text-sm text-gray-500 ${
+                      theme === "dark" ? "text-text-muted-dark" : "text-text-muted"
+                    }`}
+                  >
+                    {license?.users.email}
+                  </p>
                 </div>
                 <span
                   className={`text-sm font-semibold px-2 py-1 rounded ${
-                    license?.is_active ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"
+                    license?.is_active
+                      ? theme === "dark"
+                        ? "bg-[#184f3b] text-success-dark"
+                        : "bg-[#22674e] text-success"
+                      : theme === "dark"
+                      ? "bg-[#692f2f] text-danger-dark"
+                      : "bg-[#621717] text-danger"
                   }`}
                 >
                   {license?.is_active ? "Active" : "Inactive"}
@@ -80,7 +109,9 @@ export default function LicenseDetailsDrawer({ toolId, toolName, open, onClose }
                 Assigned: {new Date(license?.assigned_at).toLocaleDateString()}
               </p>
               <Button
-                className="text-sm mt-2 bg-transparent text-blue-600 hover:underline hover:bg-transparent cursor-pointer"
+                className={`text-sm mt-2 bg-transparent ${
+                  theme === "dark" ? "text-accent-dark" : "text-accent"
+                } hover:underline hover:bg-transparent cursor-pointer`}
                 onClick={() => alert("Simulated: Unassigned!")}
               >
                 Unassign

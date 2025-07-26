@@ -6,6 +6,7 @@ import UpcomingRenewals from "@/components/Renewals/UpcomingRenewals";
 import NotificationCard from "@/components/Renewals/NotificationCard";
 import LicenseDetailsDrawer from "@/components/LicenseUtilization/LicenseDetailsDrawer";
 import LoadingSpinner from "@/components/LoadingSpinner";
+import { useTheme } from "@/context/ThemeContext";
 
 type Tool = {
   id: string;
@@ -22,6 +23,7 @@ const Renewals = () => {
   const [selectedTool, setSelectedTool] = useState<{ id: string; name: string } | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
+  const { theme } = useTheme();
 
   const handleReviewClick = (toolId: string, toolName: string) => {
     setSelectedTool({ id: toolId, name: toolName });
@@ -48,13 +50,33 @@ const Renewals = () => {
   if (error) return <p>Error loading data</p>;
 
   return (
-    <div className="flex flex-col gap-4">
-      <section className="flex-1">
-        <h1 className="text-xl font-semibold mb-4">Upcoming Renewals</h1>
+    <div className="flex flex-col gap-10">
+      <section
+        className={`p-6 shadow-lg rounded-lg flex-1 ${
+          theme === "dark" ? "bg-surface-dark" : "bg-surface"
+        }`}
+      >
+        <h1
+          className={`text-lg font-semibold mb-4 ${
+            theme === "dark" ? "text-text-dark" : "text-text"
+          }`}
+        >
+          Upcoming Renewals
+        </h1>
         <UpcomingRenewals tools={tools} getRenewalUrgencyColor={getRenewalUrgencyColor} />;
       </section>
-      <section className="flex-1">
-        <h2 className="text-xl font-semibold mb-4">Renewal Actions</h2>
+      <section
+        className={`p-6 shadow-lg rounded-lg flex-1 ${
+          theme === "dark" ? "bg-surface-dark" : "bg-surface"
+        }`}
+      >
+        <h2
+          className={`text-lg font-semibold mb-4 ${
+            theme === "dark" ? "text-text-dark" : "text-text"
+          }`}
+        >
+          Renewal Actions
+        </h2>
         <div className="space-y-2">
           {tools.map((tool) => (
             <NotificationCard

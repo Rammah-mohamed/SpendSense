@@ -4,11 +4,13 @@ import type { ToolUsage } from "@/types/dataTypes";
 import RedundancyHeatmap from "@/components/Redundancy/RedundancyHeatmap";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import RedundancyTable from "@/components/Redundancy/RedundancyTable";
+import { useTheme } from "@/context/ThemeContext";
 
 const Redundancy = () => {
   const [toolUsageData, setToolUsageData] = useState<ToolUsage[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<Error | null>(null);
+  const { theme } = useTheme();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -43,8 +45,21 @@ const Redundancy = () => {
   if (loading) return <LoadingSpinner />;
   if (error) return <p>Error loading data</p>;
   return (
-    <div className="flex flex-col gap-4">
-      <RedundancyHeatmap data={groupedByCategory} />
+    <div className="flex flex-col gap-10">
+      <div
+        className={`p-6 shadow-lg rounded-lg ${
+          theme === "dark" ? "bg-surface-dark" : "bg-surface"
+        }`}
+      >
+        <h2
+          className={`${
+            theme === "dark" ? "text-accent-dark" : "text-accent"
+          } font-semibold text-lg mb-2`}
+        >
+          Redundancy Heatmap
+        </h2>
+        <RedundancyHeatmap data={groupedByCategory} />
+      </div>
       <RedundancyTable data={groupedByCategory} />
     </div>
   );

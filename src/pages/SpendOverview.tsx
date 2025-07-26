@@ -10,6 +10,7 @@ import LoadingSpinner from "@/components/LoadingSpinner";
 import dayjs from "dayjs";
 import SpendOverTimeChart from "@/components/SpendOverview/SpendOverTimeChart";
 import Dropdown from "@/components/Dropdown";
+import { useTheme } from "@/context/ThemeContext";
 
 const SpendOverview = () => {
   const [mode, setMode] = useState<"Monthly" | "Yearly">("Monthly");
@@ -18,6 +19,8 @@ const SpendOverview = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
   const chartRef = useRef<HTMLDivElement>(null);
+  const tableRef = useRef<HTMLDivElement>(null);
+  const { theme } = useTheme();
 
   // Fetch tools form supabase
   useEffect(() => {
@@ -96,26 +99,66 @@ const SpendOverview = () => {
   if (loading) return <LoadingSpinner />;
   if (error) return <p>Error loading data</p>;
   return (
-    <div className="flex flex-col gap-4">
-      <Dropdown data={updatedTools} text={["CSV", "PDF", "PNG"]} />
-      <SpendTable data={updatedTools} />
-      <Dropdown ref={chartRef} text={["PDF", "PNG"]} />
-      <ResponsiveContainer>
-        <ChartWrapper
-          title={mode + " Spend Per Category"}
-          hasData={true}
-          children={<SpendByCategoryChart ref={chartRef} data={barChartData} />}
-          mode={mode === "Monthly" ? "Yearly" : "Monthly"}
-          setMode={setMode}
-        />
-      </ResponsiveContainer>
-      <ResponsiveContainer>
-        <ChartWrapper
-          title={"Monthly Spend Over Time"}
-          hasData={true}
-          children={<SpendOverTimeChart data={lineChartData} />}
-        />
-      </ResponsiveContainer>
+    <div className="flex flex-col gap-10">
+      <div
+        className={`p-6 shadow-lg rounded-lg ${
+          theme === "dark" ? "bg-surface-dark" : "bg-surface"
+        }`}
+      >
+        <div className="flex items-center justify-between mb-3">
+          <h2
+            className={`${theme === "dark" ? "text-text-dark" : "text-text"} font-semibold text-lg`}
+          >
+            SaaS Tools Spend Overview
+          </h2>
+          <Dropdown ref={tableRef} data={updatedTools} text={["CSV", "PDF", "PNG"]} />
+        </div>
+        <SpendTable ref={tableRef} data={updatedTools} />
+      </div>
+      <div
+        className={`p-6 shadow-lg rounded-lg ${
+          theme === "dark" ? "bg-surface-dark" : "bg-surface"
+        }`}
+      >
+        <div className="flex items-center justify-between mb-3">
+          <h2
+            className={`${theme === "dark" ? "text-text-dark" : "text-text"} font-semibold text-lg`}
+          >
+            Spend By Category
+          </h2>
+          <Dropdown ref={chartRef} text={["PDF", "PNG"]} />
+        </div>
+        <ResponsiveContainer>
+          <ChartWrapper
+            title={mode + " Spend Per Category"}
+            hasData={true}
+            children={<SpendByCategoryChart ref={chartRef} data={barChartData} />}
+            mode={mode === "Monthly" ? "Yearly" : "Monthly"}
+            setMode={setMode}
+          />
+        </ResponsiveContainer>
+      </div>
+      <div
+        className={`p-6 shadow-lg rounded-lg ${
+          theme === "dark" ? "bg-surface-dark" : "bg-surface"
+        }`}
+      >
+        <div className="flex items-center justify-between mb-3">
+          <h2
+            className={`${theme === "dark" ? "text-text-dark" : "text-text"} font-semibold text-lg`}
+          >
+            Spend Over Time
+          </h2>
+          <Dropdown ref={chartRef} text={["PDF", "PNG"]} />
+        </div>
+        <ResponsiveContainer>
+          <ChartWrapper
+            title={"Monthly Spend Over Time"}
+            hasData={true}
+            children={<SpendOverTimeChart data={lineChartData} />}
+          />
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 };

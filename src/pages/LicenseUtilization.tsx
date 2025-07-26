@@ -1,6 +1,9 @@
+import ChartWrapper from "@/components/ChartWrapper";
+import Dropdown from "@/components/Dropdown";
 import UtilizationChart from "@/components/LicenseUtilization/UtilizationChart";
 import UtilizationTable from "@/components/LicenseUtilization/UtilizationTable";
 import LoadingSpinner from "@/components/LoadingSpinner";
+import { useTheme } from "@/context/ThemeContext";
 import {
   groupLicensesByDeparments,
   groupLicensesByTool,
@@ -8,12 +11,14 @@ import {
 } from "@/functions/calculateUtilization";
 import { getLicenseUtilization } from "@/lib/queries";
 import type { License } from "@/types/dataTypes";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 const LicenseUtilization = () => {
   const [licenseData, setLicenseData] = useState<License[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
+  const chartRef = useRef<HTMLDivElement>(null);
+  const { theme } = useTheme();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -47,9 +52,27 @@ const LicenseUtilization = () => {
   if (error) return <p>Error loading data</p>;
   console.log(groupedLicensesByDepartments);
   return (
-    <div>
+    <div className="flex flex-col gap-10">
       <UtilizationTable data={groupedLicensesByTools} underUtilization={underUtiliztion} />
-      <UtilizationChart data={groupedLicensesByDepartments} />
+      <div
+        className={`p-6 shadow-lg rounded-lg ${
+          theme === "dark" ? "bg-surface-dark" : "bg-surface"
+        }`}
+      >
+        <div className="flex items-center justify-between mb-3">
+          <h2
+            className={`${theme === "dark" ? "text-text-dark" : "text-text"} font-semibold text-lg`}
+          >
+            Utilization Per Department
+          </h2>
+          <Dropdown ref={chartRef} text={["PDF", "PNG"]} />
+        </div>
+        <ChartWrapper
+          title={"Tools License Utilization Per Department"}
+          hasData={true}
+          children={<UtilizationChart data={groupedLicensesByDepartments} />}
+        />
+      </div>
     </div>
   );
 };

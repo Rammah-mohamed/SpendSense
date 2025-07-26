@@ -17,11 +17,11 @@ const UtilizationChart = ({ data }: Props) => {
         <Bar dataKey="Teams" fill="#0ea5e9" />
         <Bar dataKey="Zoom" fill="#f59e0b" />
         <Bar dataKey="Figma" fill="#ec4899" />
-        <Bar dataKey="GitHub" fill="#334155" />
+        <Bar dataKey="GitHub" fill="#566a85" />
         <Bar dataKey="GitLab" fill="#f97316" />
         <Bar dataKey="Jira" fill="#3b82f6" />
         <Bar dataKey="Notion" fill="#000000" />
-        <Bar dataKey="BambooHR" fill="#331172" />
+        <Bar dataKey="BambooHR" fill="#54378a" />
         <Bar dataKey="Workday" fill="#ea0808" />
       </BarChart>
     </ResponsiveContainer>

@@ -4,7 +4,6 @@ import SpendOverview from "./pages/SpendOverview";
 import LicenseUtilization from "./pages/LicenseUtilization";
 import Renewals from "./pages/Renewals";
 import Redundancy from "./pages/Redundancy";
-import Export from "./pages/Export";
 
 const App = () => {
   return (
@@ -15,7 +14,6 @@ const App = () => {
           <Route path="/utilization" element={<LicenseUtilization />} />
           <Route path="/renewals" element={<Renewals />} />
           <Route path="/redundancy" element={<Redundancy />} />
-          <Route path="/export" element={<Export />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -2,31 +2,46 @@
 
 @theme {
   /* === White Theme === */
-  --color-background: #f9fafb; /* soft off-white*/
-  --color-sidebar: #ffffff; /* pure white*/
-  --color-primary: #2563eb; /* blue-600 (for buttons/accents)*/
-  --color-hover: #1d4ed8; /* blue-700*/
-  --color-accent: #10b981; /* emerald-500 (for success, savings)*/
-  --color-warning: #f59e0b; /* amber-500*/
-  --color-danger: #ef4444; /* red-500*/
-  --color-text-Primary: #111827; /* slate-900*/
-  --color-text-Muted: #6b7280; /* gray-500*/
-  --color-border: #e5e7eb; /* gray-200*/
-  --color-card-Background: #ffffff; /* white*/
-  --color-chart-Colors: #2563eb; /*(violet-500)*/
+  --color-bg: #f9fafb; /* Page background */
+  --color-sidebar: #f3f4f6; /* Light mode sidebar (Tailwind gray-100) */
+  --color-surface: #ffffff; /* Cards, modals, sections, table rows */
+  --color-border: #e5e7eb; /* Dividers, table/grid borders, form field outlines */
+  --color-text: #111827; /* Primary text (headings, labels, table content) */
+  --color-text-muted: #6b7280; /* Secondary text (helper text, timestamps, sub-labels) */
+
+  --color-accent: #2563eb; /* Primary brand color (buttons, highlights, links) */
+  --color-accent-hover: #1e40af; /* Accent hover (darker blue for visual feedback) */
+  --color-success: #10b981; /* Positive status indicators (good utilization, success toast) */
+  --color-warning: #f59e0b; /* Warnings (approaching renewal, poor license usage) */
+  --color-danger: #ef4444; /* Errors, alerts (redundant tools, cancel buttons) */
+
+  --color-heatmap-start: #fcd34d; /* Start color for heatmap (low redundancy overlap) */
+  --color-heatmap-end: #f87171; /* End color for heatmap (high redundancy overlap) */
+
+  --color-chart-1: #3b82f6; /* Bar/line chart color #1 */
+  --color-chart-2: #9333ea; /* Bar/line chart color #2 */
+  --color-chart-3: #f97316; /* Bar/line chart color #3 */
+
   /* === Dark Theme === */
-  --color-black-background: #0f172a; /* black - slate-900 */
-  --color-black-sidebar: #1e293b; /* black - slate-800 */
-  --color-black-primary: #3b82f6; /* black - blue-500 (buttons/accents) */
-  --color-black-hover: #60a5fa; /* black - blue-400 */
-  --color-black-accent: #34d399; /* black - emerald-400 */
-  --color-black-warning: #fbbf24; /* black - amber-400 */
-  --color-black-danger: #f87171; /* black - red-400 */
-  --color-black-text-Primary: #f8fafc; /* black - slate-100 */
-  --color-black-text-Muted: #94a3b8; /* black - slate-400 */
-  --color-black-border: #334155; /* black - slate-700 */
-  --color-black-card-Background: #1e293b; /* black - slate-800 */
-  --color-black-chart-Colors: #3b82f6; /* black - blue/violet-400+ */
+  --color-bg-dark: #0f172a; /* Page background (dark mode) */
+  --color-sidebar-dark: #1e293b; /* Dark mode sidebar (Tailwind slate-800) */
+  --color-surface-dark: #1e293b; /* Cards, modals, sections, table rows (dark) */
+  --color-border-dark: #334155; /* Dividers, table/grid borders (dark) */
+  --color-text-dark: #f8fafc; /* Primary text (headings, labels, content) */
+  --color-text-muted-dark: #94a3b8; /* Secondary text (helper text, timestamps, sub-labels) */
+
+  --color-accent-dark: #60a5fa; /* Primary brand color (buttons, links, highlights) */
+  --color-accent-hover-dark: #3b82f6; /* Dark mode hover (slightly deeper but bright) */
+  --color-success-dark: #34d399; /* Positive indicators (success toast, high utilization) */
+  --color-warning-dark: #fbbf24; /* Warnings (license renewal alerts, underused tools) */
+  --color-danger-dark: #f87171; /* Errors, cancel actions, critical alerts */
+
+  --color-heatmap-start-dark: #facc15; /* Heatmap (low overlap, dark mode) */
+  --color-heatmap-end-dark: #ef4444; /* Heatmap (high overlap, dark mode) */
+
+  --color-chart-1-dark: #60a5fa; /* Chart bar/line #1 (dark mode) */
+  --color-chart-2-dark: #c084fc; /* Chart bar/line #2 (dark mode) */
+  --color-chart-3-dark: #fb923c; /* Chart bar/line #3 (dark mode) */
 }
 
 * {
