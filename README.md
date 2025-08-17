@@ -2,7 +2,7 @@
 
 > **React + TypeScript + Supabase project** built to help B2B SaaS operations teams identify redundant tools, unused licenses, and risky auto-renewals — reducing SaaS waste and saving costs.  
 
-![Dashboard Screenshot](.src/screenshots/Screenshot.png) <!-- Replace with your actual image path -->  
+![Dashboard Screenshot](./src/screenshots/Screenshot.png) <!-- Replace with your actual image path -->  
 
 ---
 
