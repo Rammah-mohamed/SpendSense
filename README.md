@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+# SaaS Spend Dashboard & Optimization Tool  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **React + TypeScript + Supabase project** built to help B2B SaaS operations teams identify redundant tools, unused licenses, and risky auto-renewals — reducing SaaS waste and saving costs.  
 
-Currently, two official plugins are available:
+![Dashboard Screenshot](.src/screenshots/Screenshot.png) <!-- Replace with your actual image path -->  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌍 Project Overview  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Companies are losing **30–60% of their SaaS budget** due to:  
+- Duplicate tools across departments  
+- Inactive licenses left unmonitored  
+- Auto-renewals on underused subscriptions  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+This project demonstrates how internal tools can help businesses **save real money**.  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+I built this dashboard to showcase **problem-solving with frontend development** and **business-focused data visualization**.  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📊 Case Study (Simulated Company Data)  
+
+**Company:** AcmeCorp (750 employees)  
+**Annual SaaS Spend:** $73,740 across 17 vendors  
+
+**Findings:**  
+- ⚠️ **Redundancy:** Slack + Teams, Salesforce + HubSpot, Jira + Linear  
+- 💤 **License waste:** ~40% inactive licenses across key vendors  
+- 🔄 **Auto-renewal risks:** Salesforce ($1,000), Slack ($450), Zoom ($180)  
+
+**💡 Potential Savings Identified:**  
+➡️ ~$44,000/year (~60% reduction)  
+
+---
+
+## ✨ Features  
+
+- 📈 Track SaaS vendor spend (monthly & annual)  
+- 🛠️ Detect redundant tools across departments  
+- 👥 Monitor license utilization (active vs inactive users)  
+- ⏰ Alert for upcoming auto-renewals  
+- 💰 Simulate potential savings from consolidations  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **Frontend:** React, TypeScript, Vite  
+- **Database:** Supabase (Postgres)  
+- **UI Components:** Tailwind CSS + shadcn/ui  
+- **Charts:** Recharts  
+- **Auth & Data:** Supabase Auth + Row Level Security (mocked for demo)  
+
+---
+
+## 🚀 Getting Started  
+
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/your-username/saas-spend-dashboard.git
+   cd saas-spend-dashboard
