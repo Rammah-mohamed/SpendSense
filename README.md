@@ -58,5 +58,31 @@ I built this dashboard to showcase **problem-solving with frontend development**
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/your-username/saas-spend-dashboard.git
+   git clone https://github.com/Rammah-mohamed/SaaS-Spend-Dashboard.git
    cd saas-spend-dashboard
+
+---
+
+##📈 Why This Project Matters
+
+This isn’t just another CRUD app. It demonstrates:
+
+Frontend skills (React, TypeScript, modern UI)
+
+Data-driven insights (charting + SQL aggregation)
+
+Business impact (clear ROI: ~$44k savings simulated)
+
+Internal tools focus — solving real problems for SaaS operations teams
+
+---
+
+##🧑‍💻 Author
+
+###Rammah Mohamed
+####Frontend Developer — Specializing in internal tools for B2B SaaS operations
+
+🔗 [Live Demo](https://saas-spend-dashboard.vercel.app)  
+🔗 [Portfolio](https://coderver-portfolio.vercel.app)  
+🔗 [LinkedIn](https://www.linkedin.com/in/rammah-mohamed)
+
