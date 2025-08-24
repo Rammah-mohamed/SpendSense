@@ -63,7 +63,7 @@ I built this dashboard to showcase **problem-solving with frontend development**
 
 ---
 
-##📈 Why This Project Matters
+## 📈 Why This Project Matters
 
 This isn’t just another CRUD app. It demonstrates:
 
@@ -77,10 +77,10 @@ Internal tools focus — solving real problems for SaaS operations teams
 
 ---
 
-##🧑‍💻 Author
+## 🧑‍💻 Author
 
-###Rammah Mohamed
-####Frontend Developer — Specializing in internal tools for B2B SaaS operations
+### Rammah Mohamed
+#### Frontend Developer — Specializing in internal tools for B2B SaaS operations
 
 🔗 [Live Demo](https://saas-spend-dashboard.vercel.app)  
 🔗 [Portfolio](https://coderver-portfolio.vercel.app)  
