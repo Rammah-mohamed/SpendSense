@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-// import { ProtectedRoute } from "./features/auth/ProtectedRoute";
+import { ProtectedRoute } from "./features/auth/ProtectedRoute";
 import Layout from "./components/layout/Layout";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
@@ -15,9 +15,10 @@ const App = () => {
 			{/* Protected routes */}
 			<Route
 				element={
-					// <ProtectedRoute>
-					<Layout />
-					// </ProtectedRoute>
+					<ProtectedRoute>
+						<Layout />
+						//{" "}
+					</ProtectedRoute>
 				}
 			>
 				<Route path="/dashboard" element={<Dashboard />} />
