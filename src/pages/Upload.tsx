@@ -1,9 +1,11 @@
-
+import { CsvUpload } from "@/features/upload/CsvUpload";
 
 const Upload = () => {
-  return (
-    <div>Upload</div>
-  )
-}
+	return (
+		<>
+			<CsvUpload />
+		</>
+	);
+};
 
-export default Upload
+export default Upload;
