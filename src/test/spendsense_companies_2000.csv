@@ -1,0 +1,2001 @@
+vendor,amount,department,renewal_date
+Pendo,432,Support,2025-07-23
+Dropbox,709,Engineering,2024-08-12
+Databricks - Team,131,Support,2024-02-24
+TimescaleDB,130,Design,2024-06-27
+PagerDuty,657,Product,2026-02-20
+Figma,150,Design,2025-11-10
+AWS,347,HR,2026-01-10
+Slack,250,Engineering,2025-12-01
+FullStory,229,Design,2025-04-21
+Slack,504,Sales,2025-03-16
+Dropbox Sign,66,Sales,2026-12-29
+Zoom,180,Sales,2025-10-10
+Pendo,838,Product,2026-01-11
+Redshift,485,Support,2025-06-25
+GitHub,42,Support,2025-10-06
+Confluent,28,Design,2025-06-30
+Confluence,213,Engineering,2025-04-14
+Amplitude,238,Marketing,2025-03-05
+Posthog,114,HR,2026-10-22
+Canva,771,Sales,2025-05-20
+Calendly,322,Operations,2025-02-11
+PagerDuty,26,Legal,2024-02-09
+Intercom,177,Finance,2024-06-10
+Datadog,75,Legal,2024-12-04
+Bitbucket,257,Finance,2025-09-30
+SurveyMonkey,1679,Legal,2024-09-04
+Confluence,195,Engineering,2024-05-25
+Fivetran,32,Design,2026-11-18
+Jira,146,Support,2026-08-26
+Confluence,106,Product,2025-12-26
+ActiveCampaign,28,Design,2024-05-04
+SurveyMonkey,44,Finance,2026-07-07
+Airtable,247,Design,2026-06-26
+Yammer,35,Finance,2024-12-06
+Otter.ai,841,Sales,2026-02-15
+Slack,942,Operations,2026-09-23
+PagerDuty,25,Operations,2024-05-04
+Auth0 - Enterprise,66,Operations,2024-06-13
+Okta - Enterprise,162,Support,2025-05-19
+LaunchDarkly,694,Support,2026-12-06
+Auth0,265,Product,2024-09-25
+Dropbox Sign,30,Support,2024-07-23
+SendGrid,171,Design,2025-05-15
+Lucidchart,266,Operations,2024-01-17
+Dropbox Sign,86,Sales,2025-06-25
+Intercom,92,Support,2025-03-07
+Looker Studio,241,HR,2024-04-14
+Sentry,12,Sales,2025-06-20
+Segment,636,Design,2024-06-03
+OpenAI,389,Sales,2026-05-30
+HubSpot - Enterprise,33,Finance,2025-05-26
+Dropbox Sign,884,Sales,2025-04-29
+Segment,314,Marketing,2026-04-23
+Dropbox Sign,158,Design,2026-02-22
+GitHub,1019,Finance,2025-04-01
+Notion,327,HR,2025-12-20
+Posthog,518,Design,2025-06-18
+Calendly,14,Product,2025-12-08
+Auth0,53,Support,2025-01-24
+Linear - Enterprise,155,Design,2025-11-07
+RabbitMQPro,241,Product,2025-10-30
+SurveyMonkey,165,Product,2024-12-22
+Airbrake,19,Finance,2026-05-30
+LaunchDarkly,1130,Finance,2026-11-12
+Gong,139,HR,2026-11-21
+Trello,211,Finance,2025-02-11
+Zendesk - Enterprise,1333,Design,2026-07-21
+Braze,596,Finance,2024-10-29
+CrowdStrike,76,Finance,2024-12-26
+Stitch - Team,255,Design,2026-07-23
+Airtable,522,Legal,2026-10-30
+ActiveCampaign,149,Legal,2026-07-10
+Bitbucket,303,Operations,2026-09-19
+RedisLabs,176,Marketing,2025-10-16
+Brex,716,Finance,2024-05-11
+Braze,337,Product,2026-03-08
+LaunchDarkly - Team,586,Marketing,2025-09-03
+Loom,622,Operations,2025-03-27
+Beamer,21,Product,2024-12-04
+Freshdesk,33,Support,2024-02-25
+Datadog,818,HR,2026-02-15
+Logz.io,466,Product,2025-05-31
+Datadog,35,Marketing,2025-04-04
+CrowdStrike - Enterprise,30,Finance,2025-02-12
+Zoom,1403,Support,2025-03-22
+Freshdesk,132,Design,2024-12-01
+PowerBI - Team,258,Product,2026-03-23
+Looker Studio,108,HR,2024-09-04
+Heap,696,Design,2026-11-02
+Posthog,726,Marketing,2026-07-30
+Fivetran,267,Operations,2026-09-17
+Freshdesk,197,Finance,2024-06-26
+Netlify,1283,Product,2025-11-19
+Notion,854,HR,2025-11-28
+Netlify,253,Operations,2025-01-26
+Datadog,214,Legal,2026-07-06
+Zoom,145,Support,2026-01-25
+Gong,306,Legal,2025-07-08
+PowerBI,146,Operations,2025-01-14
+Snyk,355,Finance,2025-08-29
+Asana,92,Engineering,2025-08-21
+Stitch,723,Engineering,2025-08-05
+Gong,18,Legal,2024-08-21
+Stripe,15,Support,2025-09-14
+Datadog,663,Support,2025-04-07
+Gusto,326,Product,2025-09-17
+Heap,86,Finance,2025-03-08
+Bitbucket,126,Sales,2024-01-06
+Otter.ai,127,HR,2025-08-02
+Stitch,256,Support,2025-02-09
+ActiveCampaign,169,Sales,2024-05-26
+Azure,225,Legal,2025-09-14
+Stitch,1125,Support,2024-03-22
+Adyen,14,Support,2024-02-12
+SageMaker,116,Legal,2025-07-23
+Okta,1762,Legal,2025-12-13
+Otter.ai,99,Legal,2025-08-13
+Trello,22,Marketing,2025-05-31
+Logz.io,27,Operations,2026-08-04
+Otter.ai - Enterprise,1350,Engineering,2025-02-20
+Vercel,1657,Legal,2024-09-05
+Notion,217,HR,2024-01-29
+Yammer,57,Design,2024-11-11
+Greenhouse,219,Legal,2026-08-25
+Confluence,255,Operations,2024-10-06
+Stripe,503,Operations,2025-07-01
+Slack,1638,Legal,2026-09-18
+PostgresPro,573,Marketing,2025-01-21
+Stitch,326,Legal,2026-02-19
+Loom,119,Engineering,2024-09-15
+Lever,82,Legal,2024-07-23
+Rippling - Team,109,Sales,2024-06-02
+Gong,689,Marketing,2026-12-28
+Miro,1646,Engineering,2024-05-20
+Jira,224,Product,2024-07-20
+TimescaleDB,143,Engineering,2024-04-04
+Logz.io,335,Finance,2026-12-23
+Otter.ai,81,Support,2026-02-22
+RabbitMQPro,87,HR,2026-07-30
+Linear,1681,Operations,2024-11-19
+SendGrid,273,Product,2025-05-27
+Qualtrics,812,Design,2025-04-30
+Miro,125,Product,2025-07-16
+Figma,33,Legal,2025-08-09
+Asana,201,Sales,2024-07-17
+RedisLabs,640,Marketing,2024-09-26
+Sentry,405,Sales,2026-01-19
+Rippling,90,Legal,2025-08-27
+Redshift,38,Finance,2026-03-24
+Pendo,18,Design,2026-07-20
+Lucidchart,793,Marketing,2024-08-09
+SageMaker - Team,509,Finance,2024-05-09
+TimescaleDB,275,Design,2024-10-13
+AWS,739,Finance,2024-10-04
+Loom,652,Sales,2026-04-29
+CrowdStrike,863,HR,2024-03-08
+OpenAI,243,Design,2026-01-22
+Brex,21,Finance,2024-09-07
+Qualtrics,13,Marketing,2025-05-13
+HubSpot,195,Finance,2025-11-03
+Zendesk,326,Sales,2024-09-23
+Brex,15,Marketing,2025-05-02
+Databricks,15,Product,2026-12-13
+Intercom,364,Design,2026-07-14
+Lever,229,Engineering,2024-05-04
+Chorus,59,Legal,2024-05-30
+Datadog,93,Support,2025-10-27
+Miro,1206,Product,2024-07-22
+Stitch,167,Finance,2026-04-27
+Redshift,48,Marketing,2025-06-06
+Lucidchart,680,Design,2024-07-09
+Adyen,126,Support,2025-11-06
+Dropbox Sign,820,Engineering,2025-08-12
+Confluent,117,Legal,2025-04-04
+Mixpanel,75,Support,2025-04-08
+ActiveCampaign,26,HR,2024-02-29
+Okta,306,Sales,2024-10-20
+Heap,14,Operations,2025-03-16
+Miro,292,Marketing,2024-06-22
+GCP,28,HR,2026-06-26
+Trello,463,Operations,2024-08-21
+PostgresPro,1232,HR,2024-04-03
+Dropbox,16,Finance,2024-10-08
+Linear,1496,Sales,2024-09-21
+Miro,205,Engineering,2026-06-12
+Zoom,387,Support,2026-04-08
+Fivetran,312,Marketing,2024-12-17
+RabbitMQPro,211,Design,2025-05-13
+Adyen,822,Marketing,2025-03-29
+Snowflake,61,Finance,2025-12-16
+PostgresPro,88,Sales,2025-06-08
+New Relic,40,Legal,2026-08-08
+Heap,491,Marketing,2024-11-05
+Braintree - Enterprise,311,Support,2024-04-25
+MongoDB Atlas,645,Marketing,2025-08-10
+SendGrid,66,Operations,2026-02-26
+Freshdesk,22,Support,2025-01-20
+Logz.io,22,Marketing,2024-06-21
+Lever - Team,1789,Operations,2026-12-06
+Airbrake,212,Marketing,2024-04-17
+RedisLabs,63,Product,2025-08-04
+Linear,100,Support,2024-10-16
+PostgresPro,377,Design,2025-09-26
+Pendo,140,Operations,2024-07-10
+Posthog,20,Sales,2025-03-14
+Redshift,269,Sales,2024-06-07
+Tableau,27,Support,2024-09-25
+Confluent,146,Engineering,2026-04-21
+Algolia,1332,Legal,2025-04-24
+Expensify,1684,Finance,2026-01-23
+SageMaker,1523,Product,2026-10-26
+Rippling,234,Sales,2025-05-27
+GCP,72,Operations,2024-09-12
+Heroku,1686,Sales,2026-06-14
+Sentry,1661,Engineering,2026-04-29
+GCP,896,Marketing,2025-04-04
+Notion,464,Sales,2024-03-19
+Heroku,151,Legal,2026-07-07
+Airbrake - Enterprise,171,Sales,2026-12-16
+ActiveCampaign,149,Finance,2026-05-09
+TimescaleDB,80,Legal,2024-02-03
+RedisLabs,94,Engineering,2025-12-23
+Jira,61,Marketing,2024-05-18
+Rippling,21,Legal,2024-03-30
+TimescaleDB,20,Design,2025-12-07
+Jira,228,Marketing,2025-11-24
+Posthog,1776,Legal,2025-01-08
+Airtable - Enterprise,644,Finance,2024-03-30
+New Relic,243,Operations,2026-08-27
+Linear - Enterprise,205,Engineering,2025-11-10
+Vercel,745,Product,2025-11-25
+Okta,312,Product,2024-06-10
+Adyen,197,Design,2025-11-02
+Trello,399,Legal,2025-12-20
+Klaviyo - Enterprise,401,Product,2025-07-16
+TimescaleDB,70,Product,2026-01-14
+BambooHR,15,Support,2026-06-16
+GitHub,310,Support,2024-03-07
+Segment,313,Design,2024-10-08
+Rippling,179,Design,2024-02-23
+Okta,45,HR,2026-07-02
+Canva,840,Sales,2024-05-31
+Klaviyo,78,Marketing,2025-12-12
+Fivetran - Enterprise,324,Sales,2026-01-10
+BambooHR,88,Legal,2024-02-23
+Algolia,133,Design,2024-05-14
+PowerBI,1230,Product,2024-05-31
+HubSpot,1158,Operations,2025-12-06
+HubSpot,152,Sales,2026-06-05
+Lever - Team,61,HR,2024-12-03
+Segment,521,Operations,2025-08-04
+Datadog,150,HR,2026-12-28
+Sentry,80,Support,2025-11-22
+Heap - Enterprise,32,Support,2025-06-26
+CrowdStrike,23,Operations,2025-08-16
+Posthog,478,Design,2024-05-02
+Segment,151,Sales,2025-10-02
+Looker Studio,531,Sales,2026-01-28
+BambooHR,747,Legal,2025-05-22
+Zendesk,818,Product,2025-05-23
+Segment,248,Sales,2026-10-17
+BambooHR,627,Product,2026-11-01
+Qualtrics,197,HR,2026-10-10
+Confluent,942,Engineering,2024-08-08
+Adyen,454,Marketing,2024-04-02
+SurveyMonkey - Enterprise,379,Design,2026-03-02
+Lever,37,Design,2026-03-17
+Lucidchart,451,Finance,2026-11-08
+SurveyMonkey - Team,145,Legal,2026-11-29
+Qualtrics,99,Support,2025-10-14
+Segment,262,Operations,2026-11-09
+Expensify,1578,Marketing,2025-11-09
+SageMaker,311,Engineering,2026-08-29
+Bitbucket,219,Support,2026-09-10
+Twilio,388,Finance,2024-03-05
+FullStory,22,Product,2024-11-06
+Otter.ai,1647,Engineering,2024-10-09
+Gusto,1230,Marketing,2024-12-20
+Qualtrics,423,HR,2026-09-18
+Snyk,173,HR,2025-08-14
+Fivetran,352,Operations,2025-07-14
+Heroku,837,Product,2025-12-07
+Zendesk,50,Legal,2025-06-09
+Chorus,343,HR,2024-10-08
+Mixpanel,99,Operations,2025-04-07
+TimescaleDB,438,Design,2024-10-08
+Slack,108,Legal,2026-09-04
+CrowdStrike,282,Engineering,2024-07-02
+CrowdStrike,33,Sales,2026-05-05
+Calendly - Team,772,Sales,2025-08-15
+GitHub - Enterprise,85,Marketing,2025-08-05
+Qualtrics,1667,Sales,2026-10-29
+Freshdesk,238,Legal,2025-06-10
+Looker Studio,256,Finance,2024-12-25
+Airbrake,609,Design,2026-03-31
+Dropbox Sign,988,Finance,2024-01-14
+Bitbucket,348,HR,2024-01-24
+Bitbucket,28,Legal,2025-09-20
+Segment,285,HR,2026-01-22
+Airbrake,783,Support,2026-02-04
+Braze,227,Support,2024-06-16
+Rippling,85,Design,2024-05-06
+Yammer,79,Operations,2026-06-23
+Intercom,709,Operations,2026-07-01
+Azure,1276,Operations,2026-08-04
+SageMaker,452,Engineering,2025-03-22
+LaunchDarkly - Enterprise,62,Engineering,2024-05-21
+Gong - Enterprise,151,Product,2026-02-05
+Miro,525,Operations,2024-09-29
+CrowdStrike,617,Finance,2024-01-08
+Zoom,619,Finance,2025-05-21
+Qualtrics,31,Product,2024-02-02
+Jira,22,Engineering,2025-05-16
+AWS,225,Engineering,2024-10-13
+Lever,387,Marketing,2025-04-30
+Looker,164,HR,2024-05-04
+Pendo,135,Product,2026-10-12
+GCP,771,Marketing,2026-05-02
+Otter.ai,889,Finance,2025-09-07
+Fivetran,25,Product,2026-12-21
+Airtable,412,Legal,2026-01-29
+Sentry,18,Support,2024-03-21
+SendGrid,176,Marketing,2025-09-12
+Figma,74,Legal,2025-05-11
+Stitch,189,HR,2026-02-18
+Freshdesk,206,Legal,2026-08-12
+Amplitude,509,Marketing,2025-10-02
+Otter.ai - Enterprise,61,Operations,2026-05-05
+Tableau,641,Finance,2026-10-19
+Yammer,303,Legal,2026-10-01
+Qualtrics,76,Operations,2026-09-27
+Okta,24,Design,2024-04-09
+Slack,102,Sales,2024-01-19
+Canva,1391,Engineering,2024-01-14
+Expensify - Team,248,HR,2024-02-05
+Lever,72,Design,2026-12-09
+PagerDuty,315,HR,2026-03-23
+Datadog,268,Finance,2025-09-06
+Hugging Face,14,Product,2026-02-11
+Yammer,69,Product,2025-11-09
+Heap,17,Support,2026-08-31
+Vercel - Enterprise,335,Support,2024-03-08
+Calendly,195,Product,2024-06-06
+Looker,706,Operations,2025-11-10
+Loom,60,Marketing,2024-04-19
+Amplitude,397,Support,2026-03-23
+Logz.io - Enterprise,1188,Marketing,2026-02-07
+Adyen,351,Support,2025-08-27
+Confluence,105,Sales,2026-03-08
+Auth0,226,HR,2024-07-28
+HubSpot,361,Design,2025-12-25
+Yammer,490,Engineering,2025-08-20
+Otter.ai,192,Sales,2026-02-18
+Twilio,775,Sales,2026-06-09
+Netlify,51,Finance,2026-10-12
+Confluent,96,Product,2025-11-11
+RabbitMQPro,1001,Support,2024-10-05
+Looker,176,Sales,2026-03-26
+Auth0,1761,Finance,2025-10-29
+Miro,220,Support,2025-02-13
+Databricks,34,Legal,2025-03-05
+Braintree,79,Product,2026-10-19
+Airtable,145,Product,2024-05-31
+Klaviyo,620,Product,2024-03-16
+Algolia,36,Finance,2025-12-28
+Twilio - Team,880,Marketing,2026-05-31
+Mixpanel - Enterprise,170,Product,2026-08-06
+SageMaker,539,Legal,2024-08-02
+Tableau,79,Sales,2025-12-14
+PowerBI,1017,Design,2026-06-16
+Tableau CRM,130,Design,2024-02-16
+Redshift,171,Finance,2026-11-22
+Calendly,875,Finance,2026-04-09
+RedisLabs,537,Support,2025-02-08
+Klaviyo,127,Design,2024-07-27
+Expensify,736,Legal,2026-12-16
+TimescaleDB,652,Marketing,2025-12-21
+Qualtrics,340,Support,2024-06-22
+SageMaker,148,Marketing,2024-10-16
+BambooHR,553,Legal,2024-12-20
+Pendo,97,Legal,2024-04-19
+MongoDB Atlas,236,Operations,2026-11-01
+CrowdStrike,726,Legal,2026-09-27
+Twilio - Team,142,HR,2025-04-05
+Expensify,1259,Design,2024-08-21
+Vercel,375,Engineering,2026-06-22
+Brex,143,Engineering,2026-07-10
+Bitbucket,1638,Design,2025-04-30
+Cloudflare,489,Support,2026-05-26
+Twilio,234,Support,2025-12-19
+Expensify,532,HR,2025-08-15
+FullStory,38,Product,2024-05-01
+Netlify,89,Marketing,2025-05-21
+SageMaker,270,Product,2026-07-14
+SendGrid,54,HR,2026-01-25
+Qualtrics,32,Design,2026-07-27
+TimescaleDB,77,Product,2025-03-22
+ActiveCampaign,478,Marketing,2024-09-24
+Heap,13,Legal,2024-02-03
+Mailchimp,600,Product,2025-02-18
+OpenAI,158,HR,2024-07-10
+CrowdStrike,66,HR,2025-04-24
+ActiveCampaign,17,Design,2024-09-28
+Databricks,12,Marketing,2024-09-03
+ActiveCampaign,158,Design,2024-07-30
+Auth0,764,Sales,2024-10-19
+Stripe - Team,112,Finance,2024-11-06
+Otter.ai,105,Design,2024-10-13
+Mailchimp,488,Sales,2025-05-22
+Netlify,306,Engineering,2025-09-09
+Cloudflare,477,Engineering,2025-05-05
+Greenhouse,61,Engineering,2026-01-09
+Auth0,519,Sales,2026-08-22
+SendGrid - Enterprise,171,Engineering,2026-03-26
+Lever,554,Product,2024-06-17
+TimescaleDB,140,Design,2026-11-13
+Cloudflare,320,Design,2025-09-27
+Stitch,100,Design,2026-06-08
+Intercom,279,Sales,2024-09-01
+Figma,119,Marketing,2026-12-07
+Gusto,104,HR,2024-08-29
+Notion,45,Support,2024-06-06
+Greenhouse,1631,Sales,2026-01-23
+Segment,43,Operations,2024-01-06
+AWS - Team,23,Product,2024-11-03
+Calendly,434,Finance,2026-05-02
+Tableau CRM,222,Engineering,2025-01-02
+Dropbox,341,Legal,2025-08-01
+PowerBI,20,HR,2025-09-14
+RabbitMQPro,1797,Finance,2025-05-17
+PagerDuty - Enterprise,187,Engineering,2025-11-17
+Slack,144,Operations,2025-05-02
+Braze - Team,145,Design,2024-03-30
+Asana,345,Design,2024-07-14
+Lever,65,Engineering,2026-06-09
+Trello,324,Product,2025-10-30
+Auth0,114,Support,2024-08-11
+PagerDuty,326,Operations,2026-01-03
+Cloudflare,35,HR,2024-03-23
+Canva,72,Marketing,2026-03-22
+BambooHR - Enterprise,63,Product,2026-07-15
+Pendo,722,Sales,2024-09-05
+Figma - Enterprise,113,Product,2026-02-01
+Hugging Face,340,Design,2024-02-14
+Stripe,71,Marketing,2024-09-07
+AWS - Team,793,Product,2026-10-13
+Notion,257,Sales,2025-07-17
+Netlify,206,Legal,2026-04-23
+Yammer,382,Finance,2026-12-12
+Confluence,35,Marketing,2026-09-09
+Brex,319,Sales,2024-02-23
+Auth0 - Team,134,Legal,2026-12-20
+MongoDB Atlas,72,Finance,2025-06-29
+Expensify,30,Finance,2026-03-06
+MongoDB Atlas,81,Support,2025-10-13
+Stitch,521,Support,2024-10-18
+Heap,1250,Sales,2026-10-01
+GitHub,93,Legal,2024-01-02
+Snowflake,100,Sales,2025-10-24
+Azure - Enterprise,152,Operations,2026-01-17
+SendGrid,651,Marketing,2025-09-10
+Logz.io,775,Legal,2025-10-11
+Calendly,260,Support,2024-12-25
+Miro,81,Engineering,2026-03-12
+Heap - Enterprise,205,Design,2026-10-13
+Zendesk,533,Sales,2024-06-30
+Fivetran,340,HR,2025-03-05
+Confluence,73,Engineering,2026-03-01
+Braintree,595,Product,2025-12-20
+Brex,119,Design,2024-03-09
+Tableau - Enterprise,34,Sales,2026-02-07
+Segment,50,Support,2026-09-15
+Fivetran - Enterprise,132,Product,2024-11-17
+GCP,163,Operations,2025-06-27
+Trello,21,Operations,2026-10-02
+PagerDuty - Team,47,Support,2026-09-10
+New Relic,354,Legal,2024-08-24
+PowerBI,141,Operations,2026-03-04
+Okta,113,HR,2026-06-19
+Freshdesk,15,Design,2024-06-24
+Dropbox Sign,189,Product,2026-12-06
+Braze,1287,Finance,2026-09-02
+Looker - Enterprise,24,Operations,2024-10-28
+Mailchimp,176,Finance,2024-09-15
+AWS,421,Sales,2025-06-12
+Auth0,35,Operations,2026-03-24
+Yammer,1700,Engineering,2026-12-06
+Braze,85,Support,2024-07-25
+Heroku,458,Legal,2026-08-26
+GitHub,323,Marketing,2025-05-01
+GCP,187,HR,2025-09-28
+Netlify,88,Finance,2024-10-02
+Looker,276,Product,2024-07-01
+Snyk,744,Operations,2026-02-04
+Azure,290,Product,2024-10-04
+Rippling - Team,247,Finance,2024-04-28
+Confluence - Team,433,HR,2026-01-24
+Freshdesk,70,Finance,2026-02-01
+Beamer,1304,Marketing,2025-12-06
+Segment,47,Product,2024-04-11
+Segment,244,Finance,2025-02-27
+Vercel,23,Sales,2024-12-20
+Confluent,291,HR,2026-05-17
+Miro,174,Operations,2026-03-24
+LaunchDarkly,382,Support,2025-08-01
+Looker,535,Marketing,2025-07-21
+Bitbucket,165,Operations,2025-05-07
+Azure,696,Sales,2024-02-22
+CrowdStrike,542,Engineering,2025-01-23
+Redshift,1687,Marketing,2026-11-04
+Looker,95,Legal,2024-09-19
+Bitbucket,173,Marketing,2024-07-01
+Dropbox,220,Marketing,2026-01-31
+Bitbucket,58,Support,2024-05-25
+Gong,617,Product,2024-04-20
+PagerDuty,892,Legal,2024-10-20
+Auth0,59,Sales,2025-10-03
+TimescaleDB - Enterprise,227,Sales,2024-11-20
+Beamer,133,Product,2026-04-06
+ActiveCampaign,24,Marketing,2024-01-29
+Logz.io,28,Finance,2025-04-08
+OpenAI,53,Support,2025-09-18
+Twilio - Team,229,Operations,2026-12-09
+Redshift,101,Legal,2026-01-05
+Snyk,311,Finance,2024-09-25
+Canva,74,Engineering,2026-02-07
+TimescaleDB,26,Engineering,2024-08-09
+CrowdStrike - Team,55,Product,2024-09-10
+Yammer,215,Engineering,2025-09-08
+Braze,269,Sales,2026-05-07
+Mixpanel,147,Design,2026-10-16
+New Relic,154,Product,2025-08-27
+Segment - Enterprise,213,Legal,2025-11-08
+Jira - Enterprise,80,Legal,2024-11-01
+Sentry,84,Finance,2026-07-24
+Tableau - Team,164,HR,2026-01-07
+SageMaker,81,Engineering,2024-01-20
+Airtable,502,Support,2025-07-03
+Sentry,54,Legal,2025-07-10
+Loom,689,Sales,2024-08-19
+HubSpot - Team,72,Support,2026-09-15
+Heap,767,Support,2024-02-29
+Hugging Face,117,Legal,2024-08-19
+Otter.ai,184,Operations,2025-04-03
+Dropbox Sign,55,Finance,2026-09-13
+PostgresPro,160,Operations,2024-04-21
+Figma,1622,Sales,2024-06-02
+Beamer,132,Finance,2026-02-14
+SurveyMonkey,1561,Legal,2024-06-29
+Greenhouse,1494,Engineering,2024-07-29
+SurveyMonkey,31,Support,2025-09-15
+BambooHR,1740,Marketing,2024-04-21
+Dropbox,1459,Marketing,2026-07-15
+Intercom,20,HR,2026-12-05
+Lucidchart - Team,119,Product,2024-08-07
+Linear,429,Finance,2025-11-23
+Mixpanel - Team,76,Legal,2026-07-25
+Trello,605,Engineering,2026-06-05
+LaunchDarkly,143,Sales,2024-09-19
+Mixpanel,361,Product,2026-05-07
+Segment,215,Marketing,2025-08-25
+Klaviyo,322,Operations,2025-10-04
+Looker Studio,126,Support,2025-08-18
+Hugging Face,120,Marketing,2024-08-24
+MongoDB Atlas,704,Operations,2025-08-08
+ActiveCampaign,21,Engineering,2024-04-25
+New Relic,284,Sales,2024-05-07
+OpenAI,20,Legal,2024-07-28
+Airbrake,223,Operations,2026-03-07
+Jira,286,Engineering,2026-02-20
+Loom,527,Engineering,2024-01-27
+Linear,1595,Marketing,2025-02-06
+Tableau CRM,178,Design,2025-01-17
+Calendly,22,Operations,2025-06-25
+HubSpot,19,Sales,2024-03-22
+PagerDuty,237,Support,2026-01-03
+SendGrid,262,Operations,2024-05-19
+Lever,355,Finance,2025-03-12
+Trello,261,Support,2026-12-22
+Gong,14,Marketing,2026-07-01
+Jira,262,Marketing,2026-02-20
+Intercom,125,Operations,2026-02-06
+BambooHR,19,Finance,2025-10-18
+BambooHR,27,Finance,2025-03-12
+Hugging Face,687,Design,2024-11-10
+Notion,34,Sales,2025-05-30
+Pendo - Enterprise,217,Legal,2026-04-08
+Adyen,62,Support,2024-05-09
+LaunchDarkly - Enterprise,514,Design,2025-08-16
+Hugging Face,1057,Engineering,2026-08-28
+Segment,778,Operations,2025-08-27
+TimescaleDB,524,Engineering,2024-10-16
+Mailchimp - Enterprise,622,Design,2025-09-16
+Cloudflare,256,Operations,2024-10-18
+Segment,166,Sales,2024-04-21
+Yammer,281,HR,2024-07-20
+New Relic,308,Finance,2024-07-23
+Heroku,354,Marketing,2025-09-18
+OpenAI,470,Product,2024-12-11
+Slack,466,Marketing,2024-10-02
+SageMaker,1134,HR,2026-09-24
+Yammer,80,Sales,2025-02-06
+Bitbucket,83,Operations,2024-03-04
+LaunchDarkly,253,Operations,2025-06-17
+Brex,103,Finance,2025-08-18
+Airtable,518,Engineering,2025-05-04
+Airbrake,113,Sales,2024-10-26
+Chorus - Team,878,HR,2026-01-26
+Asana - Enterprise,319,Legal,2024-04-05
+AWS,320,HR,2024-12-22
+Miro,60,Product,2025-04-01
+Gusto,355,Legal,2024-01-14
+Lever,103,HR,2025-03-09
+PagerDuty,69,Product,2025-11-07
+Tableau CRM,852,Sales,2026-04-21
+Zoom,76,Operations,2024-03-21
+FullStory,121,Product,2024-02-08
+Tableau CRM,42,Support,2026-08-23
+Chorus,155,Sales,2026-11-12
+Bitbucket,1315,Design,2025-04-15
+Miro,184,Operations,2026-05-09
+PagerDuty,33,Operations,2026-10-27
+Mailchimp,33,Product,2026-12-05
+Braze - Team,437,Legal,2026-02-19
+PostgresPro,55,HR,2026-09-04
+Asana,454,Engineering,2024-01-15
+FullStory,692,Marketing,2026-04-17
+Algolia,182,Operations,2026-05-17
+Heap,752,Product,2026-09-15
+Calendly,357,Support,2025-12-06
+Fivetran,74,Legal,2024-11-27
+Amplitude,468,Support,2024-04-16
+Segment,79,Legal,2026-06-10
+Sentry - Enterprise,66,Product,2026-03-31
+Airbrake,34,Sales,2026-10-09
+Braintree - Enterprise,166,Support,2026-11-11
+Gusto,20,Engineering,2024-11-18
+Sentry,421,Product,2025-02-14
+Gusto - Enterprise,62,Operations,2025-12-13
+PostgresPro,171,Product,2024-01-10
+Bitbucket,60,Marketing,2024-08-27
+BambooHR,286,Product,2026-09-17
+Confluence,1417,Support,2024-02-26
+Chorus,211,Finance,2025-10-08
+Otter.ai,28,HR,2025-05-23
+Heroku,207,Sales,2026-09-02
+Auth0,163,Finance,2026-10-18
+New Relic,169,Finance,2025-05-26
+RabbitMQPro,85,Legal,2024-01-14
+Brex,403,Legal,2025-07-16
+Beamer,215,Support,2024-09-19
+GCP,24,Product,2024-12-23
+Qualtrics,978,Engineering,2024-01-25
+SageMaker,310,HR,2025-01-18
+Yammer,311,Legal,2026-05-18
+Cloudflare,487,HR,2026-07-12
+Okta,236,HR,2025-04-27
+Pendo,156,Sales,2026-08-26
+Figma,462,HR,2025-05-28
+Pendo - Team,71,Engineering,2025-03-17
+Linear,1493,HR,2026-01-09
+Algolia,202,Product,2024-09-05
+PostgresPro,193,Operations,2024-12-23
+Heroku,1529,Legal,2024-06-09
+Miro,164,Marketing,2026-05-13
+RedisLabs,34,Marketing,2025-04-12
+Auth0,265,Product,2025-07-09
+Braintree,1096,Sales,2024-02-17
+HubSpot,42,Product,2024-07-29
+Amplitude - Enterprise,12,Product,2026-12-09
+Datadog,69,Product,2025-09-25
+Asana,75,Sales,2024-02-28
+GitHub,491,Legal,2025-07-11
+Yammer,130,Legal,2026-06-09
+Rippling,353,Finance,2024-07-02
+Braintree,96,Engineering,2026-12-07
+Airtable,28,Legal,2026-09-04
+Looker - Enterprise,263,Engineering,2026-02-04
+Snyk,449,Product,2026-02-13
+Dropbox,182,Support,2025-07-10
+Heroku,219,Design,2025-01-08
+Airtable,926,Support,2026-10-04
+Snyk,16,Design,2025-07-31
+Vercel,17,Sales,2024-01-31
+Greenhouse,1797,Legal,2024-03-05
+Snowflake,66,Product,2024-05-26
+Brex,316,Engineering,2024-09-06
+Looker Studio,896,Engineering,2025-02-11
+Qualtrics,175,HR,2025-10-23
+Segment - Team,45,HR,2025-02-10
+Algolia,265,Finance,2026-06-08
+Logz.io - Enterprise,53,Finance,2024-01-19
+AWS,104,Design,2025-05-24
+Segment,515,Engineering,2024-05-02
+MongoDB Atlas,37,Finance,2025-10-10
+Pendo,1479,Engineering,2026-02-12
+MongoDB Atlas,23,Legal,2025-08-26
+Brex,125,Marketing,2026-08-17
+Netlify,68,Sales,2026-07-09
+Tableau,600,Operations,2026-02-15
+Okta,459,Finance,2025-10-18
+Tableau CRM - Enterprise,413,Legal,2024-11-11
+Airbrake,219,Operations,2024-05-16
+AWS,16,Legal,2025-01-27
+Amplitude - Enterprise,694,Operations,2025-06-08
+GCP,30,Finance,2026-10-03
+Datadog,380,Product,2026-01-25
+Fivetran - Enterprise,29,HR,2024-06-08
+Canva,185,Finance,2025-01-30
+Rippling,127,Operations,2026-04-30
+Mixpanel,1443,Product,2024-08-01
+Twilio,416,Operations,2026-06-26
+MongoDB Atlas,484,Product,2026-05-31
+Tableau CRM,157,Operations,2025-06-04
+Algolia,300,Engineering,2025-08-05
+Confluent - Enterprise,121,Finance,2025-03-15
+Auth0 - Enterprise,340,Operations,2024-11-12
+Amplitude - Enterprise,91,Support,2025-05-26
+Asana,641,Finance,2024-06-07
+Tableau CRM,1590,Support,2024-07-14
+Confluent - Team,347,Engineering,2025-11-15
+PostgresPro,82,Finance,2024-01-24
+TimescaleDB,245,Marketing,2024-11-02
+Logz.io,28,Product,2026-07-01
+Confluent,473,Product,2024-10-30
+HubSpot,25,HR,2024-06-23
+SurveyMonkey,151,Legal,2025-02-09
+Beamer,133,HR,2026-05-30
+Logz.io,70,Product,2026-01-18
+PostgresPro,30,Sales,2025-12-17
+Airbrake,112,Finance,2025-02-12
+Hugging Face,36,Engineering,2025-05-12
+RabbitMQPro,123,Design,2025-09-16
+Klaviyo,126,Operations,2025-06-13
+Yammer,143,Engineering,2026-02-10
+LaunchDarkly,160,HR,2025-02-15
+Stitch - Team,13,HR,2026-01-07
+Mixpanel - Enterprise,438,Product,2026-11-07
+Fivetran,41,Operations,2026-07-26
+Pendo - Team,256,HR,2025-11-14
+Beamer,426,Marketing,2025-09-11
+Jira,314,HR,2026-03-03
+Notion,117,Product,2024-10-08
+Sentry,165,Support,2024-11-08
+ActiveCampaign,341,Sales,2025-02-27
+CrowdStrike,245,HR,2026-12-08
+Airtable,138,Support,2024-11-19
+Auth0 - Enterprise,41,Sales,2024-03-01
+Auth0,482,HR,2024-11-07
+Snyk,265,Support,2025-04-17
+Confluent,208,Legal,2024-10-01
+Lever,246,Product,2026-10-03
+Gong,21,Engineering,2025-07-06
+Otter.ai,226,Design,2024-12-28
+Braintree,492,Finance,2026-05-25
+SurveyMonkey,732,Product,2026-12-11
+Posthog,57,Engineering,2025-05-18
+Gusto,25,Operations,2024-04-10
+Snyk,305,HR,2026-08-02
+Twilio,28,Sales,2026-08-07
+Posthog,40,Support,2024-10-04
+Typeform,114,Finance,2026-07-20
+Sentry,146,Design,2024-07-05
+Intercom,61,Product,2026-11-13
+Airbrake,326,Sales,2025-11-17
+Heap,164,Sales,2024-04-15
+Braze,946,Sales,2024-08-28
+HubSpot - Team,122,Legal,2026-10-18
+Brex,885,Support,2026-09-01
+Qualtrics,17,Operations,2025-07-23
+RabbitMQPro,98,Sales,2024-04-22
+CrowdStrike,28,Support,2025-09-03
+Snowflake - Team,896,Sales,2025-08-05
+Airbrake,175,Support,2026-01-07
+GitHub,503,Design,2026-05-25
+Yammer - Enterprise,71,HR,2025-11-05
+Rippling,200,Design,2026-12-19
+Sentry,222,Marketing,2025-06-15
+Rippling,133,Legal,2026-11-30
+RedisLabs,217,Finance,2024-01-04
+Mailchimp - Enterprise,74,Finance,2026-04-29
+Otter.ai - Enterprise,92,Finance,2025-07-30
+Linear,456,Design,2025-11-13
+Redshift,31,Finance,2025-11-07
+Redshift,1556,Sales,2026-09-13
+PagerDuty,346,Product,2024-04-24
+Gusto,379,Engineering,2025-03-02
+FullStory,203,Sales,2025-07-28
+Notion,128,Product,2025-01-18
+Confluent,289,Marketing,2024-03-05
+Vercel,156,HR,2025-03-18
+Rippling,30,Design,2026-06-27
+Lever - Enterprise,82,Legal,2026-12-08
+PowerBI,79,Operations,2024-09-28
+Cloudflare,30,Engineering,2024-06-27
+Snowflake - Team,125,HR,2025-03-05
+Logz.io,458,Design,2025-07-12
+PagerDuty,42,Marketing,2025-10-14
+Vercel,257,Sales,2024-05-25
+PowerBI,660,Engineering,2026-08-22
+SageMaker - Enterprise,55,Sales,2026-07-02
+Airbrake,218,Operations,2024-06-09
+Freshdesk,716,HR,2026-08-11
+Gong,339,Product,2025-01-10
+Stitch,343,Engineering,2024-05-13
+Gong,93,Marketing,2024-09-17
+BambooHR,49,Design,2025-09-10
+Expensify,201,Operations,2024-11-21
+Chorus,770,Product,2025-12-01
+Brex,74,Support,2026-09-23
+Intercom,79,Sales,2025-09-22
+SurveyMonkey - Enterprise,496,Engineering,2024-07-04
+Canva,30,Sales,2026-07-16
+Expensify,834,Marketing,2025-09-05
+Heap,730,Marketing,2024-07-01
+LaunchDarkly - Enterprise,808,HR,2024-05-07
+Lucidchart,28,Marketing,2024-08-12
+Heroku,675,Product,2026-04-11
+Miro,116,Finance,2026-02-26
+Algolia,76,Design,2024-02-02
+Zendesk,884,Sales,2024-06-22
+Airtable,1672,Support,2026-05-21
+RabbitMQPro,1061,Finance,2025-01-15
+ActiveCampaign,218,HR,2026-04-21
+Brex - Team,25,Marketing,2024-08-19
+LaunchDarkly,147,Operations,2025-07-26
+Freshdesk,44,Design,2025-10-01
+Airbrake - Enterprise,23,Operations,2026-08-18
+FullStory,189,Engineering,2025-09-14
+Heap,128,HR,2024-02-25
+Heroku,81,HR,2025-05-31
+HubSpot,123,Design,2024-12-23
+Databricks,470,HR,2025-04-28
+Beamer,20,Design,2024-10-24
+Confluent,1503,Product,2026-02-23
+Jira,85,Marketing,2024-04-21
+Posthog,16,Product,2026-09-02
+Looker,158,Product,2026-08-29
+Bitbucket,18,Legal,2026-02-21
+SageMaker,14,Operations,2025-12-25
+Adyen,200,HR,2024-07-20
+Linear,222,Support,2025-02-03
+Gusto,97,Engineering,2024-01-18
+Stripe - Enterprise,71,Marketing,2025-03-25
+Tableau CRM,26,Engineering,2025-03-20
+Confluent,35,Support,2024-09-23
+Miro,167,Sales,2025-06-02
+Tableau,1707,HR,2026-05-24
+OpenAI,272,Design,2025-07-21
+Azure,18,HR,2024-12-30
+Braintree - Enterprise,199,Sales,2026-10-04
+Mixpanel,200,Design,2026-06-23
+Looker Studio - Team,64,HR,2026-07-02
+Zoom,34,Product,2025-06-29
+PagerDuty,24,Legal,2026-09-06
+Adyen,62,Engineering,2026-02-26
+OpenAI,300,HR,2026-03-31
+Azure,51,Marketing,2024-06-13
+Qualtrics,121,Engineering,2026-02-25
+Trello,67,Marketing,2026-09-23
+Datadog,115,Finance,2024-02-21
+Tableau CRM,337,Operations,2025-09-22
+Greenhouse,1759,Engineering,2024-03-16
+Redshift - Enterprise,21,Finance,2026-12-07
+Qualtrics,148,Finance,2024-05-27
+GitHub,23,Support,2024-04-03
+Confluence,135,HR,2024-07-18
+Qualtrics,79,Design,2024-08-21
+Greenhouse,78,Product,2025-11-21
+SageMaker,98,Finance,2024-04-03
+Databricks,153,Product,2024-12-10
+Stitch,256,Engineering,2024-09-30
+Amplitude,766,Engineering,2026-09-24
+Datadog - Enterprise,72,Support,2025-08-04
+Braze,1430,Finance,2024-10-20
+TimescaleDB,258,Support,2024-03-18
+Confluent,67,HR,2025-12-13
+Braze - Enterprise,89,Design,2026-01-11
+Brex,139,Finance,2024-08-18
+PagerDuty,1197,Sales,2024-03-29
+GCP,450,Support,2026-07-17
+AWS - Team,78,Engineering,2026-09-20
+BambooHR,1311,Marketing,2026-05-08
+New Relic,230,Marketing,2025-04-11
+Amplitude,157,Finance,2024-05-30
+Gong - Team,386,Support,2026-07-20
+Calendly,203,HR,2025-02-18
+Snowflake,18,Design,2026-08-11
+Qualtrics,249,Support,2024-11-17
+TimescaleDB,105,Operations,2026-09-28
+Canva,123,Product,2025-05-20
+Confluence,169,Engineering,2026-05-05
+AWS - Enterprise,22,Product,2026-09-08
+Stitch,104,Engineering,2026-04-12
+Canva,30,HR,2024-11-27
+Fivetran,35,Legal,2024-10-10
+Fivetran,405,Engineering,2024-05-24
+Loom,19,HR,2025-02-28
+Hugging Face,24,Marketing,2024-04-15
+Intercom,20,Sales,2024-05-17
+Pendo,265,Design,2026-09-06
+LaunchDarkly,147,HR,2026-10-28
+Hugging Face - Team,304,Legal,2026-10-23
+Rippling,228,Marketing,2024-05-14
+Snyk,53,Sales,2025-08-13
+SendGrid,119,Finance,2026-12-02
+RedisLabs - Enterprise,116,Product,2026-06-28
+Posthog - Enterprise,32,Finance,2026-11-30
+Posthog,355,Operations,2026-06-30
+Qualtrics,161,HR,2025-04-09
+Chorus,15,HR,2026-07-22
+Twilio,163,Sales,2024-11-10
+Segment - Team,386,Legal,2025-06-17
+Lucidchart,27,Marketing,2024-10-29
+Lucidchart,149,Engineering,2026-04-08
+Greenhouse,236,Operations,2026-11-05
+Snowflake,352,Support,2024-10-28
+Heap,428,Legal,2024-03-23
+Airtable,21,Finance,2026-07-02
+MongoDB Atlas - Team,195,Finance,2025-07-23
+New Relic - Enterprise,1412,Design,2026-11-14
+Typeform,33,Marketing,2026-03-25
+Zendesk,523,HR,2025-12-07
+PostgresPro,42,Legal,2026-05-01
+Braintree,737,Product,2024-10-12
+Databricks,233,Operations,2025-11-17
+Stripe,353,Product,2025-07-13
+Braze,83,Product,2025-08-15
+Yammer,320,HR,2026-10-08
+Pendo,15,HR,2026-08-25
+Mailchimp,407,Finance,2024-02-28
+Mailchimp,65,Marketing,2026-09-11
+Heap,1769,Design,2026-02-03
+BambooHR - Team,159,Engineering,2024-10-26
+Auth0,238,HR,2026-01-09
+Braze,18,Operations,2024-06-06
+BambooHR,65,Sales,2025-10-22
+Auth0,185,Marketing,2024-07-15
+Expensify,15,HR,2026-02-02
+Beamer,72,Sales,2026-10-27
+Dropbox,55,Design,2024-08-26
+HubSpot,285,Sales,2026-06-24
+Confluent,145,Engineering,2024-08-30
+Dropbox,145,Finance,2024-09-23
+Datadog,34,Legal,2026-06-02
+AWS - Team,23,HR,2024-03-29
+Stripe - Team,76,Support,2025-02-24
+Databricks,190,Sales,2025-07-22
+LaunchDarkly,180,Design,2024-07-21
+LaunchDarkly,263,Sales,2024-01-09
+Tableau CRM,1039,Support,2025-01-14
+Braintree,533,Product,2025-03-14
+BambooHR,224,Design,2026-11-30
+Airtable,253,Engineering,2024-06-17
+Logz.io,1320,HR,2026-06-28
+Dropbox,413,Design,2026-09-01
+SageMaker - Team,1406,Product,2026-06-16
+Gusto,107,Support,2024-07-27
+Twilio - Enterprise,252,Product,2024-09-08
+Asana,303,Support,2025-07-13
+Posthog,892,Operations,2025-07-25
+Zendesk,237,Finance,2024-10-02
+Notion - Team,59,Engineering,2025-01-01
+Miro,269,Design,2024-06-05
+Trello,842,Legal,2026-10-01
+Lever,34,Engineering,2026-05-31
+Mailchimp,565,Engineering,2024-03-08
+Calendly,332,Sales,2026-10-03
+Adyen,1516,Support,2026-10-01
+Trello,1171,Sales,2026-11-03
+Azure,670,Marketing,2025-08-05
+Logz.io - Enterprise,160,Marketing,2024-02-25
+RedisLabs,537,Product,2025-12-20
+Azure,262,Design,2025-09-16
+Intercom - Team,193,Product,2026-11-20
+Braze,35,Product,2026-03-10
+Logz.io,71,Finance,2025-11-19
+Greenhouse,239,HR,2026-01-14
+Adyen,80,Operations,2025-03-14
+Heroku,782,Support,2024-07-07
+Looker Studio,278,Support,2026-12-23
+Gong,69,HR,2026-10-30
+Looker,164,HR,2026-11-21
+Qualtrics,27,Operations,2025-01-17
+FullStory,921,Operations,2026-06-07
+Heap - Team,155,Sales,2025-05-07
+PagerDuty,546,Design,2025-02-20
+Otter.ai,90,Support,2025-04-28
+SurveyMonkey,17,HR,2026-08-08
+Beamer,16,HR,2024-10-06
+Notion,137,Engineering,2026-09-22
+Zoom - Enterprise,396,Design,2026-04-13
+Algolia,865,Sales,2025-04-28
+Intercom,61,Support,2026-12-11
+Linear,76,Marketing,2025-11-05
+LaunchDarkly,258,Finance,2024-10-22
+Mixpanel,1090,Support,2024-04-24
+Beamer,48,Product,2026-08-30
+Hugging Face,103,Marketing,2025-09-23
+Zoom,32,Engineering,2025-05-05
+Linear,505,Design,2026-12-31
+Jira,856,HR,2025-09-08
+Sentry,170,Sales,2026-06-17
+RedisLabs,773,HR,2024-06-13
+Beamer,438,Design,2024-11-24
+Stitch,661,Operations,2025-10-31
+Qualtrics,135,Sales,2024-01-07
+SurveyMonkey,36,Finance,2026-11-23
+Looker Studio,161,Product,2025-10-16
+Klaviyo,161,Support,2025-11-01
+Heroku,107,Product,2025-04-04
+Zoom,253,Legal,2025-02-10
+Bitbucket,670,Support,2025-06-16
+PagerDuty,30,Operations,2026-06-10
+Qualtrics,218,Finance,2025-06-29
+Heroku,813,Support,2025-03-17
+Heroku,109,Sales,2024-02-28
+Tableau,1688,Marketing,2026-07-27
+Datadog - Enterprise,530,Product,2025-03-10
+Looker Studio,137,Operations,2024-04-30
+GCP,538,Support,2024-04-03
+Slack,354,Marketing,2024-09-27
+Pendo - Enterprise,120,Marketing,2026-08-16
+HubSpot,385,Design,2025-10-03
+AWS,299,Product,2025-08-02
+Bitbucket,244,Product,2024-12-03
+Auth0,126,Legal,2024-04-18
+Snyk,23,Sales,2026-08-14
+Adyen,648,Marketing,2026-09-20
+Qualtrics,74,Design,2025-02-21
+Heroku,255,Support,2025-03-10
+LaunchDarkly - Team,109,Design,2025-05-19
+Greenhouse,18,Design,2026-03-18
+Lucidchart,235,Design,2026-07-31
+Fivetran,262,Engineering,2025-11-05
+AWS,521,Support,2024-09-21
+Canva,197,Engineering,2024-05-24
+Yammer,453,Finance,2026-03-27
+Sentry - Enterprise,767,HR,2024-11-11
+Mailchimp,336,Support,2024-09-25
+MongoDB Atlas,178,Product,2026-09-02
+Vercel,786,Support,2025-01-16
+Adyen,530,Finance,2024-11-13
+Greenhouse,47,Product,2024-06-11
+Chorus,321,Operations,2026-05-25
+Tableau,24,Operations,2026-05-20
+Otter.ai,205,Support,2024-06-16
+Lever - Enterprise,815,Sales,2026-03-15
+AWS,195,Legal,2026-07-10
+RabbitMQPro,85,Design,2025-06-15
+SageMaker,21,Engineering,2024-12-17
+CrowdStrike,963,Support,2026-01-08
+OpenAI,782,Design,2024-09-13
+Airtable - Enterprise,28,Finance,2024-02-24
+Cloudflare,168,Operations,2025-01-25
+Sentry,1106,Design,2024-12-06
+PagerDuty,1165,Legal,2025-05-11
+New Relic,330,Engineering,2024-07-29
+RedisLabs,809,Support,2025-08-18
+GitHub,878,Engineering,2026-12-17
+Zoom,46,Product,2026-08-27
+Intercom,341,Product,2024-02-12
+Segment,337,Operations,2025-03-25
+Databricks,757,HR,2026-03-10
+Braze,466,Sales,2025-02-28
+Heroku,754,Finance,2024-11-16
+Segment,964,Finance,2024-04-06
+Zoom,80,Operations,2024-03-06
+Stripe,111,Finance,2026-09-23
+Bitbucket,30,Operations,2025-07-01
+PagerDuty,72,Legal,2026-07-25
+Intercom,79,Engineering,2026-11-04
+Mixpanel,253,Sales,2025-08-21
+Fivetran,39,Marketing,2025-11-16
+Airtable,761,Engineering,2025-05-17
+Gong,45,Product,2026-01-08
+RedisLabs,772,Sales,2026-05-28
+Otter.ai,519,Legal,2024-10-25
+Figma,35,Marketing,2026-04-02
+Twilio,27,Sales,2024-04-28
+RedisLabs,220,Operations,2025-09-15
+Tableau CRM,31,Operations,2024-10-27
+Stitch,1436,Product,2025-02-08
+Looker,735,Sales,2026-12-01
+Brex,245,Sales,2024-02-17
+Notion,177,HR,2026-05-15
+Lever - Team,273,Operations,2025-12-26
+Mailchimp - Enterprise,56,Support,2024-01-11
+Qualtrics,153,HR,2024-10-13
+Looker Studio,49,Support,2025-01-29
+Algolia,797,Design,2024-07-07
+Azure,170,Marketing,2026-12-13
+SurveyMonkey,823,Support,2026-10-18
+TimescaleDB,1478,Product,2024-11-29
+Zendesk,755,Operations,2026-12-19
+Mailchimp,29,Operations,2026-01-26
+Mailchimp,52,HR,2024-03-23
+Gusto,289,Legal,2024-02-27
+Zendesk,34,HR,2025-08-03
+Canva,14,Marketing,2024-05-18
+AWS,1680,Product,2026-08-31
+Tableau CRM,120,Legal,2026-07-10
+Dropbox Sign,212,Support,2026-04-18
+Loom,34,Legal,2025-07-22
+Posthog,25,HR,2024-09-10
+Posthog,34,Operations,2025-01-22
+Gong - Team,175,HR,2025-02-25
+Confluence,701,Operations,2025-10-18
+SurveyMonkey,20,Sales,2026-04-29
+Notion,141,Design,2024-12-10
+Heroku,39,Product,2024-12-12
+Azure,29,HR,2026-03-09
+Amplitude,272,Design,2024-04-16
+New Relic,178,Operations,2026-02-27
+Intercom,339,Engineering,2026-04-14
+TimescaleDB,252,Support,2024-07-26
+Confluence,96,Product,2026-07-02
+Datadog,104,Sales,2025-05-17
+Expensify,650,Legal,2025-08-15
+CrowdStrike - Team,927,HR,2026-02-17
+PostgresPro,130,Operations,2024-05-23
+Looker,147,HR,2026-06-03
+Cloudflare,498,Marketing,2025-06-19
+Fivetran,302,Legal,2025-11-03
+Zoom,26,Engineering,2024-01-20
+SageMaker,1514,Operations,2024-06-15
+CrowdStrike,1406,Marketing,2026-02-09
+Confluent,14,Marketing,2025-01-30
+Braintree - Enterprise,283,Marketing,2025-01-27
+Sentry,132,Legal,2026-01-13
+GitHub,91,Product,2024-08-15
+Netlify,208,Support,2024-12-25
+Stripe,91,Support,2025-04-11
+Gusto,35,Operations,2025-06-01
+Hugging Face,684,Engineering,2025-10-23
+Adyen,70,Legal,2026-10-11
+Algolia - Team,98,Product,2026-12-26
+Klaviyo,209,Support,2024-02-21
+Dropbox,85,Finance,2024-12-02
+Snowflake,31,Product,2024-02-19
+Databricks,179,Legal,2025-05-03
+Redshift,259,Support,2026-06-17
+Amplitude,88,Engineering,2026-02-11
+Auth0,67,Legal,2024-04-22
+Looker,70,Operations,2024-04-16
+Tableau,439,Support,2024-01-22
+Qualtrics,50,Engineering,2026-07-18
+Gusto,30,Design,2025-01-31
+FullStory,331,Support,2026-06-29
+Okta,15,Support,2026-06-11
+BambooHR,260,Operations,2024-10-25
+Zendesk,208,Engineering,2026-11-26
+Databricks,181,Operations,2024-04-21
+ActiveCampaign,231,Marketing,2025-01-22
+Dropbox Sign,1319,Marketing,2025-11-18
+Airbrake,57,Engineering,2026-10-12
+Dropbox,173,Finance,2025-05-04
+Chorus,470,Product,2025-02-24
+SurveyMonkey,183,Marketing,2024-03-02
+Pendo,203,Marketing,2024-03-30
+Notion,249,Sales,2025-11-26
+Yammer,161,Design,2024-02-12
+SageMaker,50,Finance,2025-09-16
+Qualtrics,172,Support,2026-06-07
+Looker Studio - Enterprise,155,Finance,2026-12-26
+Miro,886,Finance,2024-04-04
+Airbrake,309,Marketing,2025-05-21
+GCP,162,Support,2026-09-28
+Cloudflare,40,Product,2026-11-08
+Lucidchart,436,Operations,2026-09-16
+Looker Studio,682,Support,2024-03-15
+Cloudflare,161,HR,2026-05-20
+Miro,271,Design,2024-10-02
+Datadog,195,Legal,2026-11-15
+RabbitMQPro,545,Legal,2025-10-11
+Vercel,137,Design,2026-01-05
+Datadog,77,Finance,2024-07-20
+Mailchimp - Team,150,Marketing,2025-05-27
+Looker,165,Support,2024-10-09
+Looker Studio,30,HR,2025-12-10
+SurveyMonkey,23,Operations,2024-11-01
+Typeform,175,Operations,2026-08-17
+Tableau CRM,48,Finance,2026-05-28
+Stitch,20,Support,2024-09-19
+PowerBI - Team,302,Product,2026-05-21
+Hugging Face,198,Engineering,2024-03-06
+Airtable,384,Support,2026-03-11
+Miro,413,Design,2025-11-04
+Heap,142,Design,2024-12-29
+GitHub,16,Design,2026-03-01
+Heroku,57,Marketing,2026-11-27
+Figma,534,Design,2024-09-21
+Expensify,873,Finance,2024-09-23
+Cloudflare,790,Support,2025-09-27
+Databricks,930,Engineering,2024-10-19
+Klaviyo - Enterprise,184,Support,2026-10-02
+Qualtrics - Team,47,Legal,2025-12-11
+Stitch,667,Sales,2026-04-30
+Confluence,574,Sales,2024-07-14
+Typeform - Team,92,Operations,2025-08-20
+Dropbox Sign,253,Product,2024-09-05
+Lucidchart - Enterprise,327,Sales,2025-06-01
+Cloudflare,68,Legal,2026-02-19
+Redshift,322,HR,2024-08-22
+Fivetran,1181,Design,2024-06-18
+Yammer,768,HR,2024-11-26
+Twilio,95,Operations,2026-03-11
+Twilio - Enterprise,156,Marketing,2024-12-30
+Canva,169,Engineering,2026-12-06
+Posthog,53,HR,2026-06-28
+GCP - Team,760,Finance,2026-02-06
+Jira - Team,35,Marketing,2025-01-28
+Hugging Face,77,Sales,2024-12-08
+AWS,296,Finance,2025-02-28
+Brex,128,Marketing,2025-10-24
+Calendly - Enterprise,21,Legal,2025-03-26
+Stripe,195,Finance,2026-04-21
+Looker,72,Support,2024-12-17
+Linear,706,Sales,2025-11-11
+Calendly,532,Legal,2024-05-18
+Snowflake - Enterprise,1058,Finance,2026-10-28
+Databricks - Team,26,Design,2025-09-24
+Jira,33,Marketing,2026-10-18
+Tableau,17,Support,2026-06-27
+Snowflake,24,Product,2025-08-13
+Notion,267,Operations,2024-04-20
+Dropbox Sign,199,Product,2026-12-03
+Logz.io,82,Design,2025-01-29
+GCP,112,Sales,2025-02-22
+Jira,973,Finance,2025-05-16
+ActiveCampaign,258,Finance,2025-07-10
+Chorus,526,Legal,2026-06-22
+ActiveCampaign,158,Legal,2024-02-10
+Miro,262,Sales,2024-12-25
+Linear,210,Support,2026-09-11
+SendGrid,117,Finance,2024-01-09
+Figma,356,Product,2026-03-19
+Lucidchart,54,Engineering,2024-09-11
+Loom,874,Marketing,2026-11-09
+Fivetran,27,Product,2025-05-20
+Confluence,407,Engineering,2024-10-29
+Bitbucket,90,Support,2024-11-26
+Figma,538,Support,2024-06-13
+Gusto,159,HR,2025-09-10
+Lever,651,Product,2024-07-01
+Mixpanel,473,HR,2025-03-05
+Typeform - Team,157,Engineering,2024-07-17
+Stripe,692,Product,2024-12-15
+Calendly,177,Operations,2024-08-13
+Klaviyo,100,Sales,2025-01-27
+Bitbucket,1352,Support,2024-08-11
+TimescaleDB,374,Design,2025-12-01
+Notion,30,HR,2024-01-15
+Dropbox Sign,42,Engineering,2026-02-08
+Segment,343,Legal,2025-11-21
+Segment,539,Finance,2026-01-09
+Dropbox Sign,494,Design,2024-01-07
+Qualtrics,63,Design,2026-12-22
+Netlify,156,Support,2026-08-31
+BambooHR,185,Marketing,2024-04-03
+Logz.io,1080,Support,2024-06-15
+PostgresPro,1784,Design,2026-02-27
+Tableau,15,Design,2025-09-09
+SageMaker,801,Legal,2024-08-24
+Chorus,120,Design,2024-08-04
+Adyen - Team,504,HR,2025-03-27
+Tableau CRM,69,Operations,2026-10-04
+Sentry,257,Support,2024-05-12
+Posthog,692,Operations,2026-06-13
+Asana,36,Marketing,2025-01-20
+Intercom,523,Support,2024-01-04
+PowerBI - Enterprise,887,Marketing,2026-01-17
+SageMaker,109,Engineering,2026-08-01
+Auth0,179,Legal,2024-10-28
+Confluent,26,HR,2026-10-25
+OpenAI,1357,Finance,2026-10-10
+Tableau,234,Finance,2025-04-05
+Stitch,162,Product,2025-09-04
+Trello,25,Marketing,2026-05-15
+SageMaker,534,Operations,2025-08-02
+Heroku,358,Marketing,2024-04-20
+Fivetran,113,Legal,2025-08-19
+Zendesk,222,Engineering,2026-01-11
+Tableau CRM,105,Product,2024-12-10
+Azure,173,Design,2026-11-21
+CrowdStrike,135,Product,2025-05-16
+GitHub,285,Sales,2026-02-07
+OpenAI,76,Product,2025-07-17
+RedisLabs,36,Design,2026-09-28
+Posthog,26,Support,2026-09-09
+Netlify,106,Product,2025-09-03
+FullStory,108,Engineering,2026-03-17
+Pendo,676,Support,2024-09-11
+Cloudflare,163,Sales,2024-01-11
+Pendo,15,Finance,2024-11-26
+Sentry,14,Design,2026-11-02
+Looker,886,Engineering,2025-05-23
+Looker - Enterprise,278,Legal,2024-10-13
+FullStory,398,Operations,2025-03-05
+OpenAI,96,Sales,2025-09-05
+Canva,196,HR,2024-09-20
+RabbitMQPro,211,Sales,2026-03-30
+Qualtrics,864,Sales,2025-02-21
+SendGrid,218,Support,2026-11-13
+Segment,537,Product,2026-02-15
+Notion,149,Design,2026-04-13
+Stripe,460,Sales,2025-04-07
+Netlify - Enterprise,158,Design,2024-09-09
+Calendly,714,Marketing,2025-07-31
+Yammer,16,Product,2025-01-05
+PostgresPro,586,Sales,2025-06-14
+Figma,77,Support,2025-07-01
+GCP,434,Finance,2026-05-06
+Fivetran,467,Operations,2025-08-10
+Netlify,144,Design,2025-09-17
+Otter.ai,34,Finance,2024-07-10
+Twilio,252,Legal,2024-01-22
+ActiveCampaign,117,Operations,2026-12-26
+Stitch - Team,253,Engineering,2026-05-20
+Stitch,26,Sales,2026-12-08
+Dropbox,121,Engineering,2026-05-15
+Greenhouse,50,Finance,2024-08-29
+Tableau,90,Support,2026-03-17
+Canva,34,Support,2026-09-26
+Azure,287,Design,2024-01-11
+PostgresPro,183,Product,2026-10-04
+New Relic,109,Legal,2024-01-15
+PagerDuty,1074,HR,2026-01-16
+ActiveCampaign,146,Legal,2026-06-18
+Segment,20,Finance,2024-08-14
+Snyk,746,Engineering,2024-11-24
+Dropbox Sign,148,Legal,2026-10-11
+Hugging Face,601,Product,2024-09-26
+Intercom,78,Operations,2024-01-28
+Hugging Face,334,Support,2024-01-17
+Adyen,75,Finance,2024-11-08
+BambooHR,81,Finance,2026-05-28
+New Relic,72,Operations,2025-01-06
+Snyk,87,Sales,2026-04-01
+GitHub,111,Support,2025-02-12
+Sentry,288,Finance,2025-03-30
+Redshift,686,HR,2024-08-13
+Vercel,448,Engineering,2025-01-07
+AWS - Enterprise,256,Legal,2025-07-27
+Segment,1036,HR,2024-08-16
+Amplitude,99,Marketing,2026-12-19
+Segment,195,Design,2024-08-05
+HubSpot,26,Finance,2025-01-30
+Fivetran,288,Legal,2025-02-17
+Expensify - Team,165,HR,2025-12-12
+Algolia,340,Product,2026-12-08
+Lever,287,Sales,2025-08-16
+AWS,223,Product,2026-10-10
+Hugging Face,39,Operations,2026-02-25
+Pendo,169,Engineering,2024-11-23
+FullStory,1204,Operations,2025-06-14
+Looker,252,Sales,2025-04-03
+AWS,173,HR,2024-09-29
+Vercel - Team,268,Finance,2026-12-30
+Intercom - Enterprise,296,Operations,2025-06-24
+Tableau CRM,197,Engineering,2024-01-22
+MongoDB Atlas,90,Engineering,2024-08-05
+Tableau CRM,328,Support,2025-02-26
+Braintree,393,Finance,2026-06-07
+Lucidchart,817,Sales,2024-12-26
+Snyk,137,Engineering,2025-09-27
+Segment,102,Design,2026-05-23
+Confluence,360,Operations,2024-10-08
+Figma,14,Engineering,2024-03-30
+HubSpot,172,Support,2024-01-28
+Figma,486,Design,2025-02-18
+Airtable,1578,HR,2025-11-10
+Chorus - Team,270,Design,2024-02-13
+AWS,385,Finance,2024-02-19
+Asana,174,Product,2024-08-18
+Beamer,87,HR,2026-01-01
+SendGrid,83,Support,2024-11-05
+Calendly,141,Sales,2025-09-09
+RabbitMQPro,46,Legal,2026-01-25
+Bitbucket,77,Sales,2024-10-27
+Auth0,1577,Design,2026-05-25
+Netlify,81,Product,2025-12-23
+Auth0,661,Marketing,2024-10-10
+CrowdStrike,1246,Legal,2026-12-26
+Expensify,616,Finance,2024-06-27
+Jira,20,Legal,2024-09-30
+Intercom - Enterprise,95,Sales,2026-05-12
+Confluence,74,Sales,2026-02-12
+Notion,28,Support,2024-05-31
+Chorus,15,Sales,2024-06-10
+Confluence - Enterprise,389,Sales,2026-08-20
+Airtable,232,Marketing,2026-06-28
+Posthog,67,Engineering,2024-12-21
+Lever,707,Legal,2025-06-12
+FullStory,858,HR,2024-07-07
+Gusto,162,Engineering,2025-03-24
+Typeform,78,Legal,2026-09-04
+Auth0,398,Marketing,2026-05-18
+Snyk,397,Marketing,2024-02-27
+Jira,42,Engineering,2025-09-25
+Snyk,17,Design,2024-04-01
+Heap,19,HR,2024-01-18
+MongoDB Atlas,146,Product,2025-12-29
+HubSpot,837,Operations,2024-07-25
+Lever,586,Engineering,2025-08-17
+Segment,87,Finance,2025-03-17
+Hugging Face,179,Operations,2026-11-23
+Segment,341,Sales,2025-11-25
+Tableau,324,Product,2025-05-04
+Cloudflare,128,Legal,2024-07-18
+Figma,59,Legal,2025-10-04
+Twilio,258,Marketing,2024-07-01
+SendGrid,356,HR,2026-06-24
+CrowdStrike,647,HR,2026-04-01
+Otter.ai,112,Operations,2025-10-04
+Lucidchart,915,Engineering,2024-04-26
+Confluence,162,HR,2026-02-08
+Segment,159,Legal,2024-07-10
+PostgresPro,730,Sales,2024-08-09
+Typeform,203,Marketing,2026-09-22
+Canva,229,Operations,2024-11-14
+Gong,35,Product,2024-05-07
+Algolia,99,Engineering,2026-05-16
+Vercel,68,Product,2024-06-16
+Looker,614,HR,2025-01-11
+GCP,526,HR,2024-12-02
+New Relic,1242,Sales,2026-06-13
+MongoDB Atlas,25,Support,2025-02-10
+SendGrid,98,Marketing,2024-01-30
+PagerDuty,1637,Design,2026-04-12
+Bitbucket - Team,1731,Sales,2026-07-09
+TimescaleDB,224,Finance,2026-05-10
+Stitch,429,Finance,2025-01-26
+SageMaker - Team,185,HR,2026-10-25
+Mailchimp,1096,Marketing,2025-12-22
+Brex,220,Sales,2026-07-28
+ActiveCampaign,125,Product,2025-08-06
+Trello,288,Design,2024-06-28
+Mixpanel - Team,362,Support,2024-07-23
+TimescaleDB,28,Product,2025-03-09
+Dropbox,41,Legal,2024-09-11
+PostgresPro,844,Product,2024-01-16
+Lucidchart,331,HR,2025-09-21
+Braze - Team,319,Engineering,2024-11-10
+Lucidchart,300,Support,2026-05-30
+Jira,797,Support,2026-05-28
+HubSpot,108,Marketing,2026-11-25
+Segment,120,Support,2026-03-13
+RedisLabs,173,Finance,2024-07-09
+Sentry - Team,63,Operations,2024-06-10
+FullStory,178,Marketing,2025-01-17
+Jira,186,Finance,2026-02-13
+Bitbucket,135,Support,2024-07-30
+Intercom,38,HR,2025-01-04
+Sentry - Enterprise,160,Legal,2024-02-14
+Otter.ai - Enterprise,42,Product,2026-02-07
+Auth0,81,Engineering,2024-12-31
+Trello,14,Marketing,2025-12-11
+Chorus,15,HR,2024-09-06
+Snyk,85,Marketing,2024-08-23
+Canva - Enterprise,73,Sales,2025-07-02
+Netlify,434,HR,2026-08-14
+Greenhouse,135,Finance,2025-07-29
+Typeform,159,Finance,2026-09-26
+Adyen,315,Support,2024-08-08
+Segment,314,Design,2026-07-09
+Twilio,260,HR,2026-12-22
+MongoDB Atlas,334,Sales,2026-01-02
+Confluence - Enterprise,232,Marketing,2024-09-07
+Figma - Team,256,Support,2025-10-20
+Asana,184,Design,2025-07-23
+Looker Studio,64,Product,2026-06-10
+Auth0,31,Legal,2024-04-05
+Netlify,132,Support,2026-02-23
+Jira,33,HR,2024-09-25
+SurveyMonkey - Enterprise,20,Engineering,2024-05-22
+Gong,185,Marketing,2026-03-30
+Datadog,21,Legal,2026-10-07
+Posthog,517,Design,2024-02-29
+Dropbox - Team,89,Product,2025-04-08
+Twilio,473,Operations,2024-01-11
+OpenAI,14,HR,2024-06-02
+Bitbucket,461,Sales,2024-10-09
+LaunchDarkly,150,Product,2026-07-04
+Dropbox Sign,1393,HR,2025-10-21
+Chorus,290,Marketing,2025-05-11
+Trello,34,Legal,2024-05-03
+Canva - Enterprise,412,Design,2025-11-28
+Cloudflare,453,HR,2026-07-18
+CrowdStrike,86,Marketing,2026-02-28
+Klaviyo,412,HR,2026-05-16
+Twilio,38,Design,2024-08-13
+Jira - Enterprise,126,Operations,2026-07-16
+MongoDB Atlas,51,Finance,2024-11-04
+Typeform,22,Marketing,2024-07-19
+GCP,416,Finance,2026-04-04
+Calendly,1222,Design,2024-04-12
+Posthog,33,Engineering,2025-06-29
+Jira - Enterprise,248,Product,2026-03-13
+Typeform,238,Sales,2025-02-20
+PostgresPro,296,Design,2025-01-14
+Lever,324,Finance,2024-12-14
+Auth0,503,Sales,2024-01-27
+Dropbox Sign,176,Design,2024-12-15
+SageMaker - Team,529,Support,2024-01-03
+Beamer,31,Support,2025-08-18
+Asana,153,Design,2025-09-15
+Snowflake,279,HR,2026-01-16
+Qualtrics - Enterprise,500,Support,2026-09-18
+Intercom,15,Product,2025-03-27
+Trello,17,Product,2026-01-06
+Cloudflare,683,HR,2026-07-09
+Rippling,499,Product,2026-05-04
+Netlify - Team,480,Design,2026-06-06
+Qualtrics,283,Engineering,2026-10-18
+Hugging Face,269,Sales,2025-09-13
+Beamer,22,Finance,2025-08-02
+Databricks,22,Engineering,2024-04-12
+Linear,174,HR,2024-10-19
+New Relic,172,Legal,2025-12-27
+Confluence,539,Design,2025-06-19
+Looker,707,Marketing,2024-10-12
+Hugging Face,632,HR,2025-09-16
+Datadog,1254,Product,2026-06-13
+Amplitude,361,Marketing,2026-08-17
+MongoDB Atlas,576,Operations,2024-02-24
+Braze,308,Support,2026-11-14
+Lucidchart,132,Product,2024-09-14
+SurveyMonkey,1607,Design,2024-04-22
+Vercel,393,HR,2026-09-13
+OpenAI,28,Operations,2024-10-22
+Pendo,251,Sales,2025-09-08
+RedisLabs,31,Support,2025-02-15
+Intercom - Enterprise,61,Finance,2025-02-22
+Mixpanel,1068,Design,2025-09-06
+SurveyMonkey,241,Operations,2025-06-17
+Airbrake,55,Engineering,2025-01-13
+Zendesk,121,Operations,2025-02-14
+Gong,87,Legal,2026-01-22
+Dropbox Sign,57,Product,2024-10-30
+Notion,306,HR,2024-03-10
+Posthog,651,Marketing,2024-10-12
+Freshdesk,35,Marketing,2026-10-22
+Lever,607,Sales,2024-11-06
+MongoDB Atlas,1458,Sales,2025-07-24
+Trello,1051,Legal,2025-01-04
+FullStory,151,Marketing,2025-12-13
+LaunchDarkly,12,Sales,2025-04-19
+Amplitude,988,Finance,2025-04-29
+Mixpanel,753,Product,2024-05-11
+Azure,56,Marketing,2024-03-01
+Calendly,379,Support,2025-02-13
+New Relic,174,Sales,2026-06-07
+Rippling,27,Design,2025-02-20
+GitHub,458,Support,2024-05-27
+Redshift,828,Finance,2026-08-28
+Lever,156,Legal,2026-05-25
+RedisLabs,37,Operations,2025-09-02
+Amplitude,188,HR,2025-05-29
+Loom,176,Design,2026-12-30
+FullStory,215,Engineering,2024-08-15
+LaunchDarkly,276,Engineering,2025-11-23
+Braze,15,Operations,2025-11-06
+Trello,687,Support,2024-03-13
+PostgresPro,83,Legal,2024-09-22
+Vercel,1209,Marketing,2026-06-02
+Chorus,93,Engineering,2024-02-23
+New Relic,25,Engineering,2026-03-03
+Miro,629,Design,2026-06-15
+Mailchimp,306,Marketing,2026-06-13
+Azure,17,Operations,2024-04-03
+Figma,13,Sales,2026-06-17
+Okta,269,Sales,2026-03-25
+Chorus,45,Operations,2025-02-25
+Greenhouse,169,HR,2026-01-21
+Yammer,196,Operations,2026-10-28
+Mixpanel - Enterprise,935,Finance,2024-10-07
+Gusto,112,Sales,2024-03-14
+Jira,1743,Engineering,2026-10-18
+GitHub,318,Design,2024-05-02
+Netlify,32,Product,2026-06-28
+AWS,619,HR,2024-03-05
+Brex,512,HR,2025-03-19
+Notion,819,Engineering,2024-08-11
+Yammer,326,Operations,2026-08-07
+ActiveCampaign,159,Product,2026-08-15
+Jira - Team,140,Finance,2025-08-28
+Redshift - Team,206,HR,2024-01-26
+Mailchimp,323,Legal,2026-08-05
+Zoom,352,Operations,2025-03-22
+Otter.ai - Enterprise,335,Operations,2025-10-05
+Stripe,182,Legal,2024-09-17
+Asana,17,Engineering,2025-01-12
+Hugging Face,195,Finance,2024-05-04
+Looker Studio,28,Marketing,2024-04-01
+Confluent,735,Design,2025-04-30
+Cloudflare,342,Product,2025-08-02
+Zendesk - Enterprise,300,Product,2026-02-06
+Gong,15,Engineering,2025-08-18
+PagerDuty - Team,235,Operations,2026-11-06
+LaunchDarkly,798,Engineering,2024-11-03
+Miro,87,Finance,2026-10-28
+FullStory,80,Operations,2024-04-15
+Segment,980,Finance,2025-08-23
+Confluence,263,Marketing,2024-08-24
+OpenAI,517,Marketing,2026-11-01
+SendGrid,170,Product,2025-04-15
+Heap,229,Product,2024-10-09
+Segment,222,Product,2026-05-12
+Lever,251,Legal,2024-02-01
+Twilio,1491,Sales,2024-03-10
+Adyen - Enterprise,37,Operations,2026-03-05
+ActiveCampaign,218,Design,2025-11-20
+Redshift,13,Marketing,2026-07-08
+Otter.ai,473,Legal,2024-10-02
+Okta,39,Engineering,2026-01-27
+SageMaker,812,Support,2025-07-26
+Amplitude,25,Operations,2026-11-06
+ActiveCampaign,174,Engineering,2025-03-07
+Adyen,215,HR,2024-12-05
+Mailchimp,249,HR,2025-06-15
+Segment,153,Finance,2026-11-07
+Twilio - Enterprise,91,Engineering,2026-01-26
+Cloudflare,739,Operations,2024-09-15
+Qualtrics,56,Product,2026-10-07
+Bitbucket,295,Design,2025-12-25
+Datadog,49,Operations,2025-11-17
+Netlify,72,Marketing,2024-03-19
+Adyen,248,Operations,2024-03-13
+TimescaleDB,823,Finance,2025-02-04
+Bitbucket,148,HR,2024-09-26
+New Relic,90,Design,2026-10-01
+Pendo,22,HR,2026-02-17
+RedisLabs,1236,Sales,2025-09-06
+Asana,1556,Product,2026-01-01
+Brex,87,HR,2026-05-09
+Klaviyo,40,Marketing,2024-08-20
+PostgresPro,1608,Legal,2026-04-23
+Hugging Face,250,Product,2024-05-04
+Pendo,328,Legal,2026-05-20
+SurveyMonkey - Team,1473,Marketing,2024-04-03
+PowerBI,124,Design,2025-11-06
+HubSpot - Team,31,Design,2025-11-13
+MongoDB Atlas,24,Marketing,2025-02-10
+Segment,142,Sales,2026-02-04
+Snowflake,259,Engineering,2024-02-11
+Rippling,650,HR,2025-09-09
+Notion,96,Design,2026-02-12
+CrowdStrike,326,Design,2024-05-31
+Lever,312,Operations,2024-11-06
+Amplitude,239,HR,2025-10-24
+ActiveCampaign - Team,230,Design,2025-06-25
+CrowdStrike,355,Product,2025-07-24
+Chorus,158,Legal,2026-03-17
+Lucidchart,868,Engineering,2026-03-24
+Asana,68,Marketing,2024-10-21
+RedisLabs,84,Legal,2025-05-26
+Datadog,1228,Support,2025-04-21
+Azure,297,Sales,2024-03-15
+Logz.io,18,Finance,2026-09-27
+Brex,147,Legal,2026-11-19
+Pendo,85,Product,2024-06-07
+Miro - Team,39,Legal,2024-08-20
+GitHub,767,Operations,2026-05-06
+SurveyMonkey - Enterprise,292,HR,2026-12-06
+Logz.io,76,Operations,2025-02-22
+Airbrake,233,Finance,2025-11-07
+Tableau CRM,122,Legal,2024-01-21
+Auth0,89,Engineering,2025-09-30
+Stitch,997,Engineering,2026-08-17
+Confluent,152,Engineering,2025-01-29
+Netlify,650,HR,2026-01-22
+RabbitMQPro,103,Sales,2024-07-29
+Canva,37,Operations,2026-02-23
+Snowflake,351,Support,2026-08-27
+Cloudflare,106,Support,2024-10-27
+Zendesk,208,Engineering,2024-10-07
+BambooHR,992,Operations,2024-08-28
+Jira,723,Marketing,2025-09-30
+Gusto,261,HR,2024-10-19
+Adyen,284,Operations,2026-06-10
+CrowdStrike - Team,487,Marketing,2026-05-18
+Canva,158,Sales,2024-01-22
+New Relic,26,Marketing,2024-07-11
+Lucidchart,26,Engineering,2025-07-17
+Posthog - Team,185,Engineering,2024-03-03
+Looker Studio,1188,Legal,2024-07-31
+GitHub,144,Sales,2024-09-26
+Datadog,22,Engineering,2025-10-05
+Amplitude,207,Engineering,2025-11-12
+SageMaker,168,Support,2026-01-20
+Gusto - Enterprise,802,Engineering,2024-05-13
+Snyk,140,Legal,2024-04-01
+Netlify,403,Engineering,2025-09-29
+Netlify,1281,Design,2026-08-06
+Sentry,41,Support,2024-02-11
+Twilio,345,Finance,2025-09-22
+Hugging Face,224,Sales,2025-09-27
+GCP,153,Marketing,2026-04-27
+Dropbox,121,HR,2025-06-15
+Stitch,388,Marketing,2026-12-07
+Klaviyo,64,Support,2026-02-28
+PagerDuty,508,HR,2025-02-28
+Redshift,141,Finance,2025-06-12
+Canva - Team,61,Sales,2026-08-31
+Airtable,694,Engineering,2025-10-22
+Stitch,15,Legal,2025-11-16
+Redshift,290,Legal,2025-01-16
+Zoom,738,Legal,2025-05-13
+Linear,1414,HR,2024-03-23
+Asana,55,HR,2026-03-31
+Databricks - Enterprise,332,Operations,2025-02-10
+Heap,463,Engineering,2024-07-04
+PowerBI,345,Sales,2026-08-01
+Slack,96,Design,2025-01-13
+Jira,117,Operations,2026-02-05
+Slack,1259,Product,2025-03-11
+Gong,227,Design,2026-03-04
+HubSpot,763,HR,2026-05-19
+Confluent,1403,Support,2024-02-25
+Dropbox,156,Marketing,2026-10-23
+Slack,68,Sales,2026-10-20
+Snyk - Enterprise,50,Sales,2026-05-21
+PagerDuty,641,Product,2025-01-02
+Segment,57,Design,2025-12-10
+Hugging Face,782,Engineering,2024-11-25
+Auth0,613,Product,2026-05-15
+GCP,66,Legal,2026-10-25
+Lucidchart,220,Sales,2026-05-18
+Expensify,39,Marketing,2025-06-12
+New Relic,1121,Legal,2025-07-30
+AWS,198,Support,2026-01-26
+Linear,25,Sales,2025-08-23
+MongoDB Atlas,272,Support,2024-08-16
+MongoDB Atlas,449,Design,2026-12-31
+Amplitude,1117,HR,2025-12-08
+Qualtrics,648,Marketing,2026-02-02
+GitHub,52,Design,2025-11-22
+TimescaleDB,16,HR,2024-06-11
+Adyen,358,Support,2026-11-18
+Brex,20,Legal,2025-03-16
+Adyen,93,Engineering,2026-03-27
+Okta,424,Product,2024-09-22
+Netlify,214,Finance,2024-02-07
+Fivetran,294,Support,2026-08-01
+Databricks,585,Operations,2024-01-26
+Redshift,782,Legal,2025-03-07
+Expensify,216,Support,2024-06-09
+RedisLabs,42,Operations,2026-01-26
+Looker,635,Support,2024-12-07
+RabbitMQPro,30,HR,2026-10-02
+Jira,664,Design,2024-07-17
+Typeform,162,Sales,2026-04-01
+Yammer,840,HR,2025-10-16
+Algolia,360,Operations,2026-03-14
+Dropbox,943,Legal,2024-11-17
+Calendly - Team,454,Sales,2024-07-20
+Loom,546,Engineering,2025-04-04
+Airtable,65,Product,2024-02-16
+Logz.io,1421,Marketing,2024-02-16
+Confluent,243,Sales,2026-07-26
+Lucidchart,1724,Finance,2025-10-22
+HubSpot,193,Legal,2025-05-16
+Hugging Face,176,Operations,2024-08-15
+Segment,89,Design,2024-01-15
+GitHub,1634,Design,2026-05-04
+Bitbucket,22,Engineering,2025-08-22
+Typeform,20,Operations,2026-06-20
+ActiveCampaign,301,Support,2024-08-16
+Tableau CRM,231,Finance,2026-09-15
+Cloudflare,57,Legal,2025-05-16
+Bitbucket,463,HR,2025-07-17
+Confluent - Enterprise,126,Marketing,2026-01-12
+Looker Studio,128,HR,2026-08-31
+Looker Studio,77,HR,2026-02-25
+Linear - Team,194,Sales,2024-01-25
+Bitbucket,586,Sales,2025-12-05
+Posthog,368,Product,2026-09-20
+Posthog,118,Product,2024-01-30
+Dropbox Sign,169,Sales,2025-07-23
+Segment,154,Legal,2024-01-25
+Rippling,419,Product,2024-07-21
+Snowflake,88,Engineering,2026-07-03
+Heap,142,Finance,2025-04-12
+OpenAI,252,Design,2025-01-24
+Stripe,134,Finance,2025-05-14
+LaunchDarkly,62,Engineering,2025-10-15
+TimescaleDB - Enterprise,700,Finance,2024-07-23
+Brex,256,Support,2026-05-30
+Intercom,196,Support,2026-07-23
+Slack,238,Sales,2025-11-04
+Lever,183,Operations,2025-05-24
+Redshift,270,Design,2025-01-08
+Beamer - Enterprise,1194,Sales,2024-05-14
+Adyen,1010,Operations,2025-01-09
+Snyk,145,HR,2025-10-17
+Rippling,192,Sales,2025-10-25
+Segment,162,Support,2024-11-17
+Logz.io,767,HR,2025-04-13
+Bitbucket,208,HR,2025-11-14
+MongoDB Atlas,222,Product,2026-05-04
+Slack,512,Sales,2026-07-24
+Netlify - Enterprise,209,HR,2025-08-26
+Lucidchart - Enterprise,495,Operations,2025-02-12
+Canva,145,Finance,2024-11-24
+Logz.io,1742,Engineering,2026-03-09
+OpenAI,140,Support,2026-02-07
+Azure,249,Legal,2025-08-05
+Intercom,49,Product,2024-11-06
+PagerDuty,56,Marketing,2025-06-17
+Pendo,15,Design,2025-10-04
+Algolia,123,Legal,2025-04-11
+Qualtrics,181,Engineering,2024-10-14
+Mailchimp,1557,Operations,2024-05-03
+BambooHR,35,Marketing,2026-10-04
+Heroku,63,Operations,2024-08-18
+Expensify,64,Legal,2025-01-25
+SendGrid,231,Sales,2025-11-07
+SendGrid,1233,Product,2024-02-13
+SurveyMonkey - Team,311,Finance,2025-10-22
+ActiveCampaign,371,Finance,2025-12-27
+Looker Studio,84,Sales,2024-07-25
+Notion,30,Operations,2025-12-14
+Stripe,208,Finance,2025-09-12
+Segment,229,Engineering,2024-10-08
+Braintree,22,Finance,2026-02-18
+GCP,228,Support,2024-09-12
+Sentry,39,Finance,2024-09-03
+Beamer,329,Finance,2024-07-04
+Lever,86,Engineering,2024-01-15
+Miro,51,HR,2024-05-13
+Adyen,269,Design,2026-03-09
+Gong - Enterprise,196,Finance,2024-12-29
+Heap - Enterprise,143,Engineering,2024-05-05
+Confluent,209,Product,2024-11-18
+Braze,149,Sales,2026-01-17
+Intercom - Team,145,Marketing,2025-06-27
+RabbitMQPro,190,Legal,2024-03-11
+Zendesk - Team,757,Operations,2024-12-13
+Segment,106,Design,2024-08-18
+Gong,761,Support,2024-01-02
+PowerBI,150,Operations,2026-01-18
+Airbrake,1498,Support,2025-02-05
+HubSpot,87,Design,2024-07-13
+Looker Studio,44,HR,2025-01-13
+Trello,1402,Operations,2026-11-24
+FullStory,99,Marketing,2024-10-24
+LaunchDarkly,679,Finance,2025-01-08
+Figma - Team,119,Marketing,2024-01-24
+FullStory,203,Support,2026-04-10
+Klaviyo,251,Design,2025-07-26
+CrowdStrike,538,Sales,2025-06-06
+Redshift,1395,Marketing,2026-11-29
+Bitbucket - Enterprise,35,Sales,2024-07-12
+Asana,63,HR,2024-09-15
+PostgresPro,87,Operations,2025-01-08
+Typeform,115,Finance,2024-02-04
+New Relic,127,Operations,2026-12-11
+GCP,214,Operations,2024-12-07
+Lucidchart,241,Sales,2026-05-18
+New Relic,477,Operations,2026-05-12
+Gong,120,HR,2025-09-30
+Cloudflare,33,Product,2024-10-14
+Zendesk,160,Sales,2026-05-08
+Typeform,205,HR,2024-10-14
+SurveyMonkey,84,Sales,2025-07-18
+Logz.io - Enterprise,245,Support,2026-08-22
+Asana,62,Support,2026-07-19
+PagerDuty - Enterprise,495,Engineering,2026-02-20
+Linear,165,Legal,2025-08-19
+Dropbox,266,Legal,2026-06-04
+Braze - Enterprise,322,HR,2025-05-30
+TimescaleDB,355,Design,2024-01-27
+Amplitude,865,Product,2025-06-28
+Mixpanel,1272,Support,2026-02-08
+Segment,325,Design,2024-07-20
+FullStory,154,Support,2026-05-13
+Typeform - Team,1622,Support,2026-12-06
+GitHub,701,Engineering,2025-03-18
+Heap,215,Product,2024-02-28
+Qualtrics,306,Finance,2025-07-20
+Klaviyo,304,Sales,2025-03-04
+Pendo,446,Marketing,2024-12-18
+Greenhouse,146,HR,2024-07-26
+Tableau CRM,1367,Product,2025-02-18
+Bitbucket,470,Marketing,2024-11-22
+Twilio,338,Operations,2025-08-29
+Pendo,41,Design,2026-04-08
+Bitbucket,322,Product,2024-07-31
+Tableau,539,Legal,2024-03-24
+Confluence,126,Finance,2025-03-24
+Confluence,116,HR,2025-05-14
+Zoom,1097,Operations,2025-01-28
+Otter.ai,676,Product,2025-06-19
+Fivetran,223,Marketing,2025-04-25
+Auth0,98,Finance,2024-09-20
+Amplitude,1242,Design,2025-04-11
+Tableau CRM,173,Support,2024-04-18
+Qualtrics,338,Sales,2024-02-15
+Pendo,351,Sales,2024-05-10
+Hugging Face,256,Engineering,2026-10-02
+Adyen,429,Legal,2025-09-26
+Expensify,192,Operations,2026-04-13
+Zendesk,490,Support,2024-04-18
+Looker Studio,66,Operations,2026-04-27
+Segment,160,Engineering,2026-10-10
+Mailchimp,644,Product,2026-04-14
+Miro,245,HR,2025-12-28
+Calendly,708,HR,2026-04-02
+New Relic,50,Design,2026-12-08
+Linear - Enterprise,28,Design,2024-12-11
+Slack,19,HR,2024-02-26
+Heap,82,Support,2026-10-17
+Okta,82,Sales,2026-02-05
+FullStory,120,Legal,2024-03-03
+RabbitMQPro - Enterprise,78,HR,2025-08-19
+Mixpanel,168,Legal,2025-01-30
+Segment,517,Operations,2026-03-07
+Klaviyo,50,Marketing,2024-10-16
+Jira,324,Engineering,2026-09-10
+Trello,80,Design,2025-10-18
+Rippling,754,Finance,2025-08-01
+Logz.io,346,Product,2026-04-07
+Adyen,725,Operations,2026-09-18
+Airbrake,305,Engineering,2026-12-16
+AWS,136,Engineering,2026-12-30
+Notion - Enterprise,153,Operations,2024-04-17
+Hugging Face,121,Engineering,2025-03-15
+Amplitude,218,Design,2025-02-20
+Greenhouse,13,Product,2025-02-25
+OpenAI,208,Marketing,2024-12-28
+Loom,326,Sales,2025-05-19
+RabbitMQPro,708,HR,2025-02-23
+CrowdStrike,21,Product,2026-02-11
+Netlify,904,Engineering,2026-03-20
+AWS,102,Design,2024-08-24
+Segment,124,Sales,2025-06-09
+Hugging Face,248,HR,2025-06-19
+Mixpanel,261,Operations,2026-10-16
+New Relic,1174,Design,2025-04-13
+GitHub,44,Support,2026-01-29
+Braintree,27,Operations,2025-01-22
+Cloudflare - Team,34,Marketing,2025-05-28
+Calendly,21,Sales,2025-08-20
+Lever - Enterprise,150,Legal,2024-02-21
+Braintree - Enterprise,253,Sales,2025-10-12
+Azure,26,Sales,2025-10-20
+Lucidchart - Enterprise,91,Engineering,2024-04-29
+Loom,227,Engineering,2024-05-31
+Zoom,469,Support,2026-03-03
+Klaviyo,1335,Marketing,2026-07-20
+Chorus,260,HR,2024-12-23
+Loom,446,Product,2025-09-06
+Zendesk - Enterprise,267,Sales,2025-12-23
+Cloudflare,576,Legal,2026-06-28
+Loom,379,Operations,2025-02-25
+Confluence,260,Support,2026-01-14
+Freshdesk,524,HR,2025-03-13
+Typeform,960,Support,2026-04-24
+GCP,139,Operations,2026-06-03
+Okta - Team,159,Sales,2025-07-13
+Hugging Face,645,Finance,2024-11-04
+Otter.ai,151,Legal,2025-10-09
+Airbrake,28,Design,2024-06-24
+Zoom - Enterprise,19,Design,2025-10-03
+MongoDB Atlas,145,Design,2026-01-13
+RabbitMQPro,1170,Sales,2025-08-16
+Looker,79,Design,2026-12-26
+RabbitMQPro,1439,HR,2025-05-25
+Intercom,716,Engineering,2024-10-04
+Miro,26,Marketing,2026-06-22
+LaunchDarkly,35,Support,2025-12-05
+Redshift,40,Support,2025-09-06
+SageMaker,263,Marketing,2025-08-21
+Looker Studio,397,Legal,2024-02-02
+RabbitMQPro,103,HR,2025-01-28
+BambooHR,23,Sales,2024-04-16
+CrowdStrike,1795,Marketing,2024-03-23
+Vercel,1391,Marketing,2024-03-05
+HubSpot,29,Engineering,2025-09-11
+Miro,321,HR,2026-02-07
+Snowflake,544,Marketing,2024-09-28
+PostgresPro,937,Design,2026-07-10
+Dropbox Sign,490,Design,2024-02-17
+HubSpot,40,Design,2024-11-11
+FullStory,30,Engineering,2025-11-29
+RabbitMQPro - Enterprise,1357,Marketing,2024-08-04
+Airbrake,255,Design,2025-01-15
+Sentry,774,Finance,2025-03-06
+GCP,175,Finance,2026-10-11
+Segment,22,Operations,2024-01-13
+Datadog,165,Support,2025-01-22
+Stitch,123,Marketing,2025-04-11
+Segment,264,Operations,2025-08-07
+Canva,185,HR,2025-07-30
+Segment - Enterprise,504,Engineering,2026-05-30
+Datadog,614,Design,2025-10-14
+Databricks,64,Marketing,2026-07-12
+MongoDB Atlas,960,Legal,2025-10-03
+Brex,65,Marketing,2026-04-19
