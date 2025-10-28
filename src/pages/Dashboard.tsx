@@ -5,6 +5,7 @@ import { useFilteredData } from "../features/dashboard/useFilteredData";
 import { computeSummary } from "@/features/dashboard/computeSummary";
 import { SummaryCards } from "@/features/dashboard/SummaryCards";
 import { useTheme } from "@/context/ThemeContext";
+import { ChatToggle } from "@/features/chat/ChatToggle";
 
 const Dashboard = () => {
 	const filtered = useFilteredData();
@@ -27,6 +28,7 @@ const Dashboard = () => {
 					<SummaryCards data={summary} />
 					<VendorChart />
 					<DepartmentChart />
+					<ChatToggle contextData={filtered} />
 				</div>
 			)}
 		</div>
