@@ -1,17 +1,24 @@
-import { getTopVendor, summarizeSpend } from "./dataUtils";
+// aiClient.ts
+export async function queryAI(query: string, contextData: any) {
+	try {
+		const res = await fetch("/api/ai", {
+			method: "POST",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify({ query, contextData }),
+		});
 
-export async function queryAI(query: string, data: any) {
-	await new Promise((r) => setTimeout(r, 800)); // simulate delay
+		const data = await res.json();
 
-	if (query.toLowerCase().includes("total spend")) {
-		const total = summarizeSpend(data);
-		return `The total spend is $${total.toLocaleString()}.`;
+		// Ensure consistent structure
+		return {
+			reply: data.reply || "No response from AI.",
+			action: data.action || { type: "NO_ACTION" },
+		};
+	} catch (err) {
+		console.error("AI request failed:", err);
+		return {
+			reply: "⚠️ Something went wrong while communicating with the AI.",
+			action: { type: "NO_ACTION" },
+		};
 	}
-
-	if (query.toLowerCase().includes("top vendor")) {
-		const vendor = getTopVendor(data);
-		return `The top vendor by renewal count is ${vendor.name} with ${vendor.count} renewals.`;
-	}
-
-	return "I’m not sure yet, but I can analyze the uploaded data for trends or totals!";
 }

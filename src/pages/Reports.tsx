@@ -1,9 +1,7 @@
-
+import ExportWithPreview from "@/features/report/ExportWithPreview";
 
 const Reports = () => {
-  return (
-    <div>Reports</div>
-  )
-}
+	return <ExportWithPreview />;
+};
 
-export default Reports
+export default Reports;

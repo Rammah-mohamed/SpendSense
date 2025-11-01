@@ -1,4 +1,4 @@
-import { useDashboardStore } from "./store";
+import { useDashboardStore } from "./useDashboardStore";
 
 const departments = [
 	"Engineering",

@@ -11,7 +11,7 @@ interface ChatState {
 	messages: Message[];
 	addMessage: (role: "user" | "ai", content: string) => void;
 	isTyping: boolean;
-	setTyping: (status: boolean) => void;
+	setIsTyping: (status: boolean) => void;
 	clearChat: () => void;
 }
 
@@ -22,6 +22,6 @@ export const useChatStore = create<ChatState>((set) => ({
 			messages: [...state.messages, { id: crypto.randomUUID(), role, content }],
 		})),
 	isTyping: false,
-	setTyping: (status) => set({ isTyping: status }),
+	setIsTyping: (status) => set({ isTyping: status }),
 	clearChat: () => set({ messages: [] }),
 }));

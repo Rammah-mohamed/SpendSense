@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useQueryClient } from "@tanstack/react-query";
-import { useDashboardStore } from "./store";
+import { useDashboardStore } from "./useDashboardStore";
 import type { SpendRecord } from "@/types/types";
 
 export function useFilteredData() {

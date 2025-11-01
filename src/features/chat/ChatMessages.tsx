@@ -1,7 +1,8 @@
 // src/components/Chat/ChatMessages.tsx
 import { useEffect, useRef } from "react";
-import { MessageBubble } from "./MessageBubble";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
+import { AnimatePresence, motion } from "framer-motion";
+import { MessageBubble } from "./MessageBubble";
 
 interface ChatMessagesProps {
 	messages: {
@@ -24,19 +25,45 @@ export function ChatMessages({ messages, isTyping }: ChatMessagesProps) {
 
 	if (!messages || messages.length === 0) {
 		return (
-			<div className="flex flex-col items-center justify-center h-full text-gray-400 text-sm">
-				<p>Start chatting with SpendSense AI 💬</p>
-				<p>Ask about your spend, renewals, or vendors!</p>
+			<div
+				className="flex flex-col items-center justify-center h-full text-center px-6"
+				style={{ color: "var(--color-text-muted)" }}
+			>
+				<p className="font-medium">Start chatting with SpendSense AI 💬</p>
+				<p className="text-xs mt-1">Ask about your spend, renewals, or vendors.</p>
 			</div>
 		);
 	}
 
 	return (
-		<ScrollArea ref={scrollRef} className="flex-1 p-4">
-			{messages.map((m) => (
-				<MessageBubble key={m.id} role={m.role} content={m.content} />
-			))}
-			{isTyping && <div className="text-sm text-gray-500 italic">SpendSense AI is thinking…</div>}
+		<ScrollArea className="flex-1 px-2 py-3">
+			<div className="flex flex-col gap-3">
+				<AnimatePresence>
+					{messages.map((m: any) => (
+						<motion.div
+							key={m.id}
+							initial={{ opacity: 0, y: 10 }}
+							animate={{ opacity: 1, y: 0 }}
+							exit={{ opacity: 0, y: 10 }}
+							transition={{ duration: 0.2 }}
+						>
+							<MessageBubble role={m.role} content={m.content} />
+						</motion.div>
+					))}
+				</AnimatePresence>
+
+				{isTyping && (
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						exit={{ opacity: 0 }}
+						className="text-xs italic ml-3 mt-1"
+						style={{ color: "var(--color-text-muted)" }}
+					>
+						SpendSense AI is thinking…
+					</motion.div>
+				)}
+			</div>
 		</ScrollArea>
 	);
 }
