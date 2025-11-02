@@ -3,6 +3,8 @@ import html2canvas from "html2canvas-pro";
 import PreviewModal from "./PreviewModal";
 import { exportDashboardPdf } from "./exportPdf";
 import { useReportStore } from "./useReportStore";
+import { Button } from "@/components/ui/button";
+import { AnimatePresence } from "framer-motion";
 
 export default function ExportWithPreview() {
 	const [previewImage, setPreviewImage] = useState<string | null>(null);
@@ -42,20 +44,26 @@ export default function ExportWithPreview() {
 
 	return (
 		<>
-			<button
-				onClick={handlePreview}
-				className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
-			>
-				Preview PDF
-			</button>
+			{/* Preview Button */}
+			<div>
+				<Button
+					onClick={handlePreview}
+					className="bg-accent text-surface px-5 py-2.5 rounded-xl font-medium shadow-sm hover:shadow-md transition-all"
+				>
+					Preview PDF
+				</Button>
+			</div>
 
-			{previewImage && (
-				<PreviewModal
-					image={previewImage}
-					onClose={() => setPreviewImage(null)}
-					onExport={handleExport}
-				/>
-			)}
+			{/* Preview Modal */}
+			<AnimatePresence>
+				{previewImage && (
+					<PreviewModal
+						image={previewImage}
+						onClose={() => setPreviewImage(null)}
+						onExport={handleExport}
+					/>
+				)}
+			</AnimatePresence>
 		</>
 	);
 }

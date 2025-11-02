@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { AnimatePresence, motion } from "framer-motion";
 import { MessageBubble } from "./MessageBubble";
+import { useTheme } from "@/context/ThemeContext";
 
 interface ChatMessagesProps {
 	messages: {
@@ -15,6 +16,7 @@ interface ChatMessagesProps {
 
 export function ChatMessages({ messages, isTyping }: ChatMessagesProps) {
 	const scrollRef = useRef<HTMLDivElement | null>(null);
+	const { theme } = useTheme();
 
 	// Auto-scroll to bottom whenever messages update
 	useEffect(() => {
@@ -26,17 +28,22 @@ export function ChatMessages({ messages, isTyping }: ChatMessagesProps) {
 	if (!messages || messages.length === 0) {
 		return (
 			<div
-				className="flex flex-col items-center justify-center h-full text-center px-6"
-				style={{ color: "var(--color-text-muted)" }}
+				className={`flex flex-col items-center justify-center h-full text-center px-6 transition-colors duration-300
+					${theme === "dark" ? "text-text-muted-dark" : "text-text-muted"}
+				`}
 			>
-				<p className="font-medium">Start chatting with SpendSense AI 💬</p>
+				<p className="font-medium text-sm">Start chatting with SpendSense AI 💬</p>
 				<p className="text-xs mt-1">Ask about your spend, renewals, or vendors.</p>
 			</div>
 		);
 	}
 
 	return (
-		<ScrollArea className="flex-1 px-2 py-3">
+		<ScrollArea
+			className={`flex-1 px-3 py-4 transition-colors duration-300
+				${theme === "dark" ? "bg-bg-dark" : "bg-bg"}
+			`}
+		>
 			<div className="flex flex-col gap-3">
 				<AnimatePresence>
 					{messages.map((m: any) => (
@@ -57,8 +64,9 @@ export function ChatMessages({ messages, isTyping }: ChatMessagesProps) {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
-						className="text-xs italic ml-3 mt-1"
-						style={{ color: "var(--color-text-muted)" }}
+						className={`text-xs italic ml-3 mt-1 transition-colors duration-300
+							${theme === "dark" ? "text-text-muted-dark" : "text-text-muted"}
+						`}
 					>
 						SpendSense AI is thinking…
 					</motion.div>

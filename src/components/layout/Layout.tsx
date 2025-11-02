@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Toaster } from "sonner";
 import { useTheme } from "@/context/ThemeContext";
 
-type Active = "Dashboard" | "Upload" | "Reports";
+type Active = "Dashboard" | "Upload";
 
 export default function Layout() {
 	const [text, setText] = useState<Active>("Dashboard");

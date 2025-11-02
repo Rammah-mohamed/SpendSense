@@ -1,11 +1,12 @@
 import type { User } from "@/types/types";
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { QueryClient } from "@tanstack/react-query";
 
 type AuthContextType = {
 	user: User | null;
 	login: (username: string) => void;
-	logout: () => void;
+	logout: (queryClient: QueryClient) => void;
 };
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -29,9 +30,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 		navigate("/dashboard");
 	};
 
-	const logout = () => {
+	const logout = (queryClient: QueryClient) => {
 		setUser(null);
 		localStorage.removeItem("user");
+		queryClient.clear();
 		navigate("/login");
 	};
 

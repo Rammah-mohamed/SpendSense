@@ -15,8 +15,12 @@ const Dashboard = () => {
 	const summary = computeSummary(filtered);
 
 	return (
-		<div className={`p-8${theme === "dark" ? "bg-bg-dark" : "bg-bg"} min-h-screen`}>
-			<h1 className="text-2xl font-bold mb-6">SpendSense Dashboard</h1>
+		<div className={`${theme === "dark" ? "bg-bg-dark" : "bg-bg"} min-h-screen`}>
+			<h1
+				className={`text-2xl font-bold mb-4 ${theme === "dark" ? "text-text-dark" : "text-text"}`}
+			>
+				SpendSense Dashboard
+			</h1>
 			<Filters />
 			<ExportWithPreview />
 			{filtered.length === 0 ? (
@@ -25,7 +29,7 @@ const Dashboard = () => {
 				</p>
 			) : (
 				<div className="flex flex-col gap-4">
-					<div id="dashboard-report">
+					<div className="flex flex-col gap-4" id="dashboard-report">
 						<SummaryCards data={summary} />
 						<VendorChart />
 						<DepartmentChart />

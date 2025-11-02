@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import { IconDashboard, IconUpload, IconReport } from "@tabler/icons-react";
+import { IconDashboard, IconUpload } from "@tabler/icons-react";
 import { useState } from "react";
 import { useTheme } from "@/context/ThemeContext";
 
-type Active = "Dashboard" | "Upload" | "Reports";
+type Active = "Dashboard" | "Upload";
 
 type MainText = {
 	text: Active;
@@ -19,13 +19,9 @@ const mainText: MainText[] = [
 		text: "Upload",
 		icon: <IconUpload stroke={2} />,
 	},
-	{
-		text: "Reports",
-		icon: <IconReport stroke={2} />,
-	},
 ];
 
-const routes: string[] = ["dashboard", "upload", "reports"];
+const routes: string[] = ["dashboard", "upload"];
 
 type Props = {
 	setText: React.Dispatch<React.SetStateAction<Active>>;
@@ -58,6 +54,7 @@ const Sidebar = ({ setText }: Props) => {
 				{mainText.map((m: MainText, index: number) => (
 					<NavLink
 						key={index}
+						id={m.text}
 						to={"/" + routes[index]}
 						className={`flex items-center p-2 ${
 							theme === "dark"

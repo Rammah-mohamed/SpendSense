@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/context/ThemeContext";
 import { useAuth } from "@/features/auth/AuthContext";
+import { LogoutButton } from "@/features/auth/LogoutButton";
+import { IconMoon, IconSun } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 
 type Active = "Dashboard" | "Upload" | "Reports";
@@ -11,32 +13,77 @@ type Props = {
 
 const Header = ({ text }: Props) => {
 	const { theme, toggleTheme } = useTheme();
-	const { user, logout } = useAuth();
+	const { user } = useAuth();
 
 	return (
 		<header
-			className={`flex items-center justify-between p-4 border-b-2 ${
-				theme === "dark"
-					? "text-text-dark bg-bg-dark border-border-dark"
-					: "text-text bg-bg border-border"
-			}`}
+			className={`flex items-center justify-between px-6 py-3 border-b transition-colors duration-300
+				${
+					theme === "dark"
+						? "bg-bg-dark border-border-dark text-text-dark"
+						: "bg-bg border-border text-text"
+				}
+			`}
 		>
-			<h2 className="text-2xl font-bold text-text-Primary">{text}</h2>
-			<div className="flex items-center gap-2">
+			{/* Left: Page Title */}
+			<h2
+				className={`text-xl md:text-2xl font-semibold tracking-tight ${
+					theme === "dark" ? "text-text-dark" : "text-text"
+				}`}
+			>
+				{text}
+			</h2>
+
+			{/* Right: Actions */}
+			<div className="flex items-center gap-3">
 				{user ? (
 					<div className="flex items-center gap-2">
-						<h2 className="text-md font-semibold">Welcome, {user?.username}</h2>
-						<Button variant={"outline"} className="cursor-pointer" onClick={logout}>
-							Logout
-						</Button>
+						<p
+							className={`text-sm md:text-base font-medium ${
+								theme === "dark" ? "text-text-dark" : "text-text"
+							}`}
+						>
+							Welcome, <span className="font-semibold">{user.username}</span>
+						</p>
+						<LogoutButton />
 					</div>
 				) : (
-					<Button variant={"outline"} className="mr-4" asChild>
-						<Link to={"/login"}>Login</Link>
+					<Button
+						variant="outline"
+						asChild
+						className={`text-sm ${
+							theme === "dark"
+								? "border-border-dark text-text-dark hover:bg-sidebar-dark"
+								: "border-border text-text hover:bg-sidebar"
+						}`}
+					>
+						<Link to="/login">Login</Link>
 					</Button>
 				)}
-				<Button variant={"outline"} className={"cursor-pointer"} onClick={toggleTheme}>
-					Dark theme
+
+				{/* Theme Toggle Button */}
+				<Button
+					variant="outline"
+					onClick={toggleTheme}
+					className={`flex items-center gap-2 text-sm font-medium transition-all
+						${
+							theme === "dark"
+								? "border-border-dark text-text-dark hover:bg-sidebar-dark"
+								: "border-border text-text hover:bg-sidebar"
+						}
+					`}
+				>
+					{theme === "dark" ? (
+						<>
+							<IconSun size={18} />
+							<span>Light</span>
+						</>
+					) : (
+						<>
+							<IconMoon size={18} />
+							<span>Dark</span>
+						</>
+					)}
 				</Button>
 			</div>
 		</header>

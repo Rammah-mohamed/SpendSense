@@ -2,12 +2,17 @@ import React, { useRef, useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useCsvParser } from "./useCsvParser";
 import type { SpendRecord } from "@/types/types";
-import { CacheDebugger } from "./CacheDebugger";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { useTheme } from "@/context/ThemeContext";
+import { cn } from "@/lib/utils";
 
 export const CsvUpload = () => {
 	const fileInputRef = useRef<HTMLInputElement | null>(null);
 	const [done, setDone] = useState<boolean>(false);
 	const queryClient = useQueryClient();
+	const navigate = useNavigate();
+	const { theme } = useTheme();
 
 	// Destructure from updated hook
 	const { parseFileAsync, loading, error } = useCsvParser();
@@ -31,29 +36,76 @@ export const CsvUpload = () => {
 		}
 	};
 
+	const handleNavigate = () => {
+		navigate("/dashboard");
+		document.getElementById("Dashboard")?.click();
+	};
+
 	return (
-		<div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow-md text-center space-y-4">
+		<div
+			className={cn(
+				"max-w-md mx-auto mt-10 p-6 rounded-xl shadow-md text-center space-y-4 border transition-all",
+				theme === "dark"
+					? "bg-(--color-surface-dark) border-border-dark text-text-dark"
+					: "bg-surface border-border text-text"
+			)}
+		>
 			<h2 className="text-xl font-semibold">Upload SaaS Spend CSV</h2>
 
+			{/* File Input */}
 			<input
 				ref={fileInputRef}
 				type="file"
 				accept=".csv"
 				onChange={handleUpload}
 				disabled={loading}
-				className="w-full border border-gray-200 p-2 rounded cursor-pointer text-sm"
+				className={cn(
+					"w-full p-2 rounded text-sm border cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent transition-all",
+					theme === "dark"
+						? "bg-bg-dark border-border-dark text-text-dark file:text-text-muted-dark hover:border-(--color-accent-dark)"
+						: "bg-bg border-border text-text file:text-text-muted hover:border-accent"
+				)}
 			/>
 
-			{loading && <div className="text-sm text-blue-500">Parsing...</div>}
+			{/* Status messages */}
+			{loading && (
+				<div className={cn("text-sm", theme === "dark" ? "text-blue-400" : "text-blue-500")}>
+					Parsing...
+				</div>
+			)}
 
-			{error && <p className="text-sm text-red-500">{error}</p>}
+			{error && (
+				<p className={cn("text-sm", theme === "dark" ? "text-red-400" : "text-red-500")}>{error}</p>
+			)}
 
-			{done && !error && <p className="text-sm font-semibold text-green-500">Upload Successed</p>}
+			{done && !error && (
+				<div>
+					<p
+						className={cn(
+							"text-sm font-semibold",
+							theme === "dark" ? "text-green-400" : "text-green-500"
+						)}
+					>
+						Upload Successful
+					</p>
+					<Button
+						onClick={handleNavigate}
+						className={cn(
+							"mt-2",
+							theme === "dark"
+								? "bg-accent-dark text-surface-dark hover:bg-accent-hover-dark"
+								: "bg-accent text-surface hover:bg-accent-hover"
+						)}
+					>
+						View Dashboard
+					</Button>
+				</div>
+			)}
 
-			<p className="text-xs text-gray-500">
+			{/* Expected Columns */}
+			<p className={cn("text-xs", theme === "dark" ? "text-text-muted-dark" : "text-text-muted")}>
 				Expected columns: <strong>vendor, amount, department, renewal_date</strong>
 			</p>
-			<CacheDebugger />
 		</div>
 	);
 };

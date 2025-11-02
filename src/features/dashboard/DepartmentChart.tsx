@@ -1,5 +1,9 @@
 import { PieChart, Pie, Tooltip, Cell, ResponsiveContainer, Legend } from "recharts";
 import { useFilteredData } from "./useFilteredData";
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+import { useTheme } from "@/context/ThemeContext";
 
 const COLORS = [
 	"#3b82f6", // Blue
@@ -14,6 +18,7 @@ const formatCurrency = (value: number) => `$${value.toLocaleString("en-US")}`;
 
 export const DepartmentChart = () => {
 	const filtered = useFilteredData();
+	const { theme } = useTheme();
 
 	const totals = filtered.reduce((acc, r) => {
 		acc[r.department] = (acc[r.department] || 0) + r.amount;
@@ -26,42 +31,80 @@ export const DepartmentChart = () => {
 	}));
 
 	return (
-		<div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-			<h3 className="font-semibold text-gray-800 mb-6 text-lg">Spend by Department</h3>
-			<ResponsiveContainer width="100%" height={320}>
-				<PieChart>
-					<Pie
-						data={data}
-						dataKey="amount"
-						nameKey="department"
-						innerRadius={60}
-						outerRadius={110}
-						paddingAngle={4}
-						stroke="#fff"
-						strokeWidth={2}
-						label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+		<motion.div
+			whileHover={{ scale: 1.01 }}
+			transition={{ type: "spring", stiffness: 280, damping: 22 }}
+		>
+			<Card
+				className={cn(
+					"rounded-2xl border transition-shadow duration-300 shadow-sm hover:shadow-md",
+					theme === "dark"
+						? "bg-surface-dark border-border-dark hover:border-border-dark/80"
+						: "bg-surface border-border hover:border-border/80"
+				)}
+			>
+				<CardContent className="p-6">
+					<h3
+						className={cn(
+							"font-semibold mb-6 text-lg",
+							theme === "dark" ? "text-text-dark" : "text-text"
+						)}
 					>
-						{data.map((_, i) => (
-							<Cell key={`cell-${i}`} fill={COLORS[i % COLORS.length]} />
-						))}
-					</Pie>
-					<Tooltip
-						formatter={(value: number) => formatCurrency(value)}
-						contentStyle={{
-							borderRadius: "8px",
-							borderColor: "#e5e7eb",
-							backgroundColor: "#ffffff",
-							boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-						}}
-					/>
-					<Legend
-						layout="horizontal"
-						verticalAlign="bottom"
-						align="center"
-						wrapperStyle={{ paddingTop: "12px" }}
-					/>
-				</PieChart>
-			</ResponsiveContainer>
-		</div>
+						Spend by Department
+					</h3>
+
+					<div className="h-80 w-full">
+						<ResponsiveContainer width="100%" height="100%">
+							<PieChart>
+								<Pie
+									data={data}
+									dataKey="amount"
+									nameKey="department"
+									innerRadius={60}
+									outerRadius={110}
+									paddingAngle={4}
+									stroke={theme === "dark" ? "var(--color-surface-dark)" : "var(--color-surface)"}
+									strokeWidth={2}
+									label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+									labelLine={false}
+									isAnimationActive
+									animationDuration={800}
+								>
+									{data.map((_, i) => (
+										<Cell key={`cell-${i}`} fill={COLORS[i % COLORS.length]} />
+									))}
+								</Pie>
+
+								<Tooltip
+									formatter={(value: number) => formatCurrency(value)}
+									contentStyle={{
+										borderRadius: "10px",
+										border: "1px solid var(--color-border)",
+										backgroundColor:
+											theme === "dark" ? "var(--color-surface-dark)" : "var(--color-surface)",
+										boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
+									}}
+									cursor={{
+										fill: theme === "dark" ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.04)",
+									}}
+								/>
+
+								<Legend
+									layout="horizontal"
+									verticalAlign="bottom"
+									align="center"
+									wrapperStyle={{
+										paddingTop: "12px",
+										fontSize: 12,
+										color:
+											theme === "dark" ? "var(--color-text-muted-dark)" : "var(--color-text-muted)",
+									}}
+								/>
+							</PieChart>
+						</ResponsiveContainer>
+					</div>
+				</CardContent>
+			</Card>
+		</motion.div>
 	);
 };
