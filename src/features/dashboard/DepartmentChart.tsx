@@ -16,7 +16,7 @@ const COLORS = [
 
 const formatCurrency = (value: number) => `$${value.toLocaleString("en-US")}`;
 
-export const DepartmentChart = () => {
+const DepartmentChart = () => {
 	const filtered = useFilteredData();
 	const { theme } = useTheme();
 
@@ -108,3 +108,5 @@ export const DepartmentChart = () => {
 		</motion.div>
 	);
 };
+
+export default DepartmentChart;

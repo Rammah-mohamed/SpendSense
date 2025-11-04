@@ -13,6 +13,7 @@ export function useCsvParser() {
 		setLoading(true);
 		setError(null);
 
+		console.time("parse");
 		return new Promise((resolve, reject) => {
 			Papa.parse(file, {
 				header: true,
@@ -65,6 +66,8 @@ export function useCsvParser() {
 						setLoading(false);
 						reject(err);
 					}
+
+					console.timeEnd("parse");
 				},
 				error: (err) => {
 					setError(err.message || "Parsing error");

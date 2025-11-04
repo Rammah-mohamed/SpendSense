@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { IconMessageChatbot } from "@tabler/icons-react";
 import { useTheme } from "@/context/ThemeContext";
 
-export function ChatToggle({ contextData }: any) {
+function ChatToggle({ contextData }: any) {
 	const [open, setOpen] = useState(false);
 	const { theme } = useTheme();
 
@@ -62,3 +62,5 @@ export function ChatToggle({ contextData }: any) {
 		</>
 	);
 }
+
+export default ChatToggle;

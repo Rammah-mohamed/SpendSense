@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 
 const formatCurrency = (value: number) => `$${value.toLocaleString("en-US")}`;
 
-export const VendorChart = () => {
+const VendorChart = () => {
 	const filtered = useFilteredData();
 	const { theme } = useTheme();
 
@@ -129,3 +129,5 @@ export const VendorChart = () => {
 		</motion.div>
 	);
 };
+
+export default VendorChart;

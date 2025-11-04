@@ -4,8 +4,9 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { visualizer } from "rollup-plugin-visualizer";
 
-// https://vite.dev/config/
 export default defineConfig({
+	// vite.config.ts
+	build: { rollupOptions: { output: { manualChunks: {} } } },
 	plugins: [
 		react(),
 		tailwindcss(),
