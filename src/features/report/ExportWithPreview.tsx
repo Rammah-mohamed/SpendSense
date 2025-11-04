@@ -11,7 +11,6 @@ export default function ExportWithPreview() {
 	const { isPreview, setIsPreview } = useReportStore();
 
 	useEffect(() => {
-		console.log(isPreview);
 		const preview = async () => {
 			if (isPreview) await handlePreview();
 			setIsPreview(false);
